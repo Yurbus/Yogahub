@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+img {
+	width: 100%;
+	object-fit: cover;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	font-size: 18px;
+	height: 100%;
+	font-family: 'Nunito Sans', sans-serif;
+	color: var(--text-color);
+	background: var(--bg-page);
+	;
+}
+button {
+	border: none;
+	cursor: pointer;
+	background: transparent;
+}
+body.lock {
+	overflow: hidden;
+}
+body._lock {
+	overflow: hidden;
+}
