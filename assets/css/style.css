@@ -327,6 +327,19 @@
 }
 
 /*============== training ==============================*/
+.training {
+  position: relative;
+}
+.training:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/Group-11.svg") no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
 .swiper2 {
   height: 530px;
 }
@@ -337,6 +350,53 @@
 }
 
 /*============================================*/
+.footer .space__body {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  align-items: center;
+  gap: 60px;
+  padding: 30px 0 100px;
+  position: relative;
+}
+.footer .space__body:before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -20%;
+  background: url("../img/bottom-photo.svg") no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.footer .space__body .space__img {
+  position: relative;
+  z-index: 3;
+}
+.footer .space__body .space__img img {
+  padding-left: 100px;
+}
+.footer .space__body .space__text {
+  position: relative;
+  z-index: 3;
+}
+.footer .space__body .space__text h3 {
+  font-family: var(--font-family-2);
+  font-weight: 800;
+  font-size: 42px;
+  font-size: clamp(26px, 4vw, 42px);
+  line-height: 100%;
+  margin-bottom: 12px;
+}
+.footer .space__body .space__text p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 12px;
+}
+.footer .space__body .space__btn {
+  max-width: 328px;
+  margin-top: 44px;
+}
 .footer .footer__body {
   background: var(--bg-cards);
   padding: 60px 0;
@@ -356,6 +416,15 @@
   }
   .swiper-button-prev {
     left: 35%;
+  }
+  .footer .space__body {
+    position: relative;
+  }
+  .footer .space__body:before {
+    display: none;
+  }
+  .footer .space__body .space__img img {
+    padding-left: 0;
   }
 }
 @media (max-width: 767.98px) {
@@ -400,6 +469,12 @@
     width: 100%;
     height: 340px;
   }
+  .training {
+    position: relative;
+  }
+  .training:before {
+    width: 0;
+  }
 }
 @media (max-width: 639.98px) {
   .medit__cart {
@@ -417,6 +492,14 @@
   }
   .swiper-button-prev {
     left: 30%;
+  }
+  .footer .space__body {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px 0 50px;
+  }
+  .footer .space__body .space__btn {
+    max-width: 100%;
   }
 }
 @media (max-width: 479.98px) {
