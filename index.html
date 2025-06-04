@@ -12,8 +12,13 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+
 </head>
 <body>
     <div class="wrapper">
@@ -22,7 +27,7 @@
 		<header class="header">
             <div class="header__container _container">
                 <div class="header__body">
-                    <a href="index.html" class="header__logo"><img src="img/yoga_logo.png" alt=""></a>
+                    <a href="index.html" class="header__logo"><img src="assets/img/yoga_logo.png" alt=""></a>
                 </div>
             </div>
         </header>
@@ -36,16 +41,16 @@
                             <h1 class="hero__title title__h1"> Твій шлях до натхнення починається тут.</h1>
                             <span class="hero__text">Простір, де живе твоя сила, краса та любов до себе.</span>
                             <a href="" class="hero__btn button__style">
-                                <img src="img/mini_logo.svg" alt="">
+                                <img src="assets/img/mini_logo.svg" alt="">
                                 Увійти до Простору YogaHub
                             </a>
                         </div>
                         <div class="body__image">
-                            <img src="img/hero-girl.png" alt="">
+                            <img src="assets/img/hero-girl.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="_ibg"><img src="img/main-bg.svg" alt=""></div>
+                <div class="_ibg"><img src="assets/img/main-bg.svg" alt=""></div>
             </section>
 
             <section class="recept section-padding">
@@ -60,10 +65,46 @@
                     <div class="recept__body">
                         <div class="recept__cart">
                             <div class="wrapp__cart">
-                                <img src="img/cart-img-1.png" alt="">
+                                <img src="assets/img/cart-img-1.png" alt="">
                                 <div class="cart__text">
-                                    <img src="img/🥣 eat-1.svg" alt="">
+                                    <img src="assets/img/🥣 eat-1.svg" alt="">
                                     <span>Сніданки</span>
+                                </div>
+                            </div>
+                            <div class="cart__btn">
+                                <a href="" class="recept__btn button__style">Детальніше</a>
+                            </div> 
+                        </div>
+                        <div class="recept__cart">
+                            <div class="wrapp__cart">
+                                <img src="assets/img/cart-img-2.png" alt="">
+                                <div class="cart__text">
+                                    <img src="assets/img/🍲  eat-2.svg" alt="">
+                                    <span>Обіди</span>
+                                </div>
+                            </div>
+                            <div class="cart__btn">
+                                <a href="" class="recept__btn button__style">Детальніше</a>
+                            </div> 
+                        </div>
+                        <div class="recept__cart">
+                            <div class="wrapp__cart">
+                                <img src="assets/img/cart-img-3.png" alt="">
+                                <div class="cart__text">
+                                    <img src="assets/img/🥗 eat-3.svg" alt="">
+                                    <span>Вечері</span>
+                                </div>
+                            </div>
+                            <div class="cart__btn">
+                                <a href="" class="recept__btn button__style">Детальніше</a>
+                            </div> 
+                        </div>
+                        <div class="recept__cart">
+                            <div class="wrapp__cart">
+                                <img src="assets/img/cart-img-4.png" alt="">
+                                <div class="cart__text">
+                                    <img src="assets/img/🍌  eat-4.svg" alt="">
+                                    <span>Солодке</span>
                                 </div>
                             </div>
                             <div class="cart__btn">
@@ -74,31 +115,110 @@
                 </div>
             </section>
 
-            <section class="stylish">
+            <section class="stylish section-padding">
                 <div class="_container">
                     <div class="section__title-block stylish__title-block">
-                        <h2 class="title__h2"></h2>
-                        <p class="block__sub-text"></p>
+                        <h2 class="title__h2">Стильні образи з YogaHub</h2>
+                        <p class="block__sub-text">Галерея готових образів з нашими костюмами для повсякденного життя: для міста, дому, тренувань і подорожей. </p>
                     </div>
                     <div class="stylish__body">
-                        
+                        <div class="gallery">
+							<a href="assets/img/IMG_1584.JPG"><img src="assets/img/IMG_1584.JPG" alt="document"></a>
+							<a href="assets/img/IMG_1585.JPG"><img src="assets/img/IMG_1585.JPG" alt="document"></a>
+							<a href="assets/img/IMG_1586.JPG"><img src="assets/img/IMG_1586.JPG" alt="document"></a>
+							<a href="assets/img/IMG_1587.JPG"><img src="assets/img/IMG_1587.JPG" alt="document"></a>
+						</div>
                     </div>
+                    <div class="stylish__btn">
+                        <a href="" class="button__style">Дивитись усі</a>
+                    </div> 
                 </div>
             </section>
 
-            <section class="meditation">
+            <section class="meditation section-padding">
                 <div class="_container">
                     <div class="section__title-block meditation__title-block">
-                        <h2 class="title__h2"></h2>
-                        <p class="block__sub-text"></p>
+                        <h2 class="title__h2">Медитація для душі</h2>
+                        <p class="block__sub-text">“Знайди момент для себе. Дихай. Відчуй. Відпусти.”</p>
                     </div>
                     <div class="meditation__body">
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="medit__cart">
+                                        <div class="medit__cart-img">
+                                            <img src="assets/img/med-1.png" alt="">
+                                        </div>
+                                        <div class="medit__cart-text">
+                                            <div class="wrapp__cart-text">
+                                                <h3>Аудіомедитація “Ранок натхнення”</h3>
+                                                <p>Текст опис до кожної медитації для того щоб людина розуміла про що саме вона буде слухати. 
+                                                    Та для загальної візуального комфорту!
+                                                </p>
+                                            </div>
+                
+                                            <div class="medit__btn">
+                                                <a href="" class="button__medit button__style">Слухати <img src="assets/img/video_fill.svg" alt=""></a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="medit__cart">
+                                        <div class="medit__cart-img">
+                                            <img src="assets/img/med-2.png" alt="">
+                                        </div>
+                                        <div class="medit__cart-text">
+                                            <div class="wrapp__cart-text">
+                                                <h3>Аудіомедитація “Вечір Подяки”</h3>
+                                                <p>Текст опис до кожної медитації для того щоб людина розуміла про що саме вона буде слухати. 
+                                                    Та для загальної візуального комфорту!
+                                                </p>
+                                            </div>
+                
+                                            <div class="medit__btn">
+                                                <a href="" class="button__medit button__style">Слухати <img src="assets/img/video_fill.svg" alt=""></a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="medit__cart">
+                                        <div class="medit__cart-img">
+                                            <img src="assets/img/med-1.png" alt="">
+                                        </div>
+                                        <div class="medit__cart-text">
+                                            <div class="wrapp__cart-text">
+                                                <h3>Аудіомедитація “Ранок натхнення”</h3>
+                                                <p>Текст опис до кожної медитації для того щоб людина розуміла про що саме вона буде слухати. 
+                                                    Та для загальної візуального комфорту!
+                                                </p>
+                                            </div>
+                
+                                            <div class="medit__btn">
+                                                <a href="" class="button__medit button__style">Слухати <img src="assets/img/video_fill.svg" alt=""></a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    
+
                         
+
                     </div>
                 </div>
             </section>
 
-            <section class="training">
+            <section class="training section-padding">
                 <div class="_container">
                     <div class="section__title-block training__title-block">
                         <h2 class="title__h2"></h2>
@@ -123,14 +243,26 @@
 			</div>
             <div class="footer__body">
                 <div class="footer__container _container">
-                    <a href="" class="footer__logo"><img src="img/yoga_logo.png" alt=""></a>
+                    <a href="" class="footer__logo"><img src="assets/img/yoga_logo.png" alt=""></a>
                 </div>
             </div>
 		</footer>
 
-	
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/swiper-slider.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script>
+            $(".gallery").magnificPopup({
+                delegate: "a",
+                    type : 'image',
+                    gallery : {
+                    enabled : true
+                }
+                });
+        </script>
 		<script>
 			AOS.init();
 		</script>
