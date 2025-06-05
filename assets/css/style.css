@@ -370,6 +370,9 @@
 }
 
 /*================ footer ============================*/
+.footer {
+  padding-top: 40px;
+}
 .footer .space__body {
   display: grid;
   grid-template-columns: 40% 1fr;
