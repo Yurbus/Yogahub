@@ -141,11 +141,6 @@ body._lock {
   top: -30px;
 }
 
-@media (max-width: 767.98px) {
-  .popup__content {
-    flex-direction: column;
-  }
-}
 /*================ Popup style ============================*/
 .popup__img img {
   height: 100%;
@@ -174,4 +169,12 @@ body._lock {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+}
+@media (max-width: 767.98px) {
+  .popup__content {
+    flex-direction: column;
+  }
+  .popup__content .popup__img img {
+    height: 300px;
+  }
 }/*# sourceMappingURL=reset.css.map */
