@@ -10,6 +10,7 @@
   --main-color-hover: #dd7c8f;
   --main-color-opacity: #FFDEDE;
   --text-color: #A16D6D;
+  --dark-color: #000000c9;
 }
 
 .wrapper {
@@ -368,7 +369,7 @@
   border-radius: 18px;
 }
 
-/*============================================*/
+/*================ footer ============================*/
 .footer .space__body {
   display: grid;
   grid-template-columns: 40% 1fr;
