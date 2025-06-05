@@ -142,8 +142,12 @@ body._lock {
 }
 
 /*================ Popup style ============================*/
+.popup__img {
+  max-height: 658px;
+}
 .popup__img img {
   height: 100%;
+  max-width: 435px;
 }
 
 .wrap__content {

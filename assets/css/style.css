@@ -425,6 +425,24 @@
   max-width: 208px;
 }
 
+/*================ Food style pages ============================*/
+.food__title {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.food__text {
+  padding: 18px;
+}
+.food__text span {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 100%;
+  height: 43px;
+  display: inline-block;
+}
+
 @media (min-width: 1510px) {
   ._container {
     max-width: 1490px;

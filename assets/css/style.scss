@@ -418,13 +418,36 @@
 }
 
 
+/*================ Food style pages ============================*/
+
+.food {
+}
+.food__breakfast {
+}
+.food__title {
+	text-transform: uppercase;
+	font-weight: 900;
+}
+.food__text {
+	padding: 18px;
+	span {
+		font-family: var(--font-family);
+		font-weight: 900;
+		font-size: 20px;
+		line-height: 100%;
+		height: 43px;
+		display: inline-block;
+	}
+}
+
+
+
+
 @media (min-width:1510px) {
 	._container  {
 		max-width: 1490px;
 	}
 }
-
-
 @media (max-width:959.98px) {
 	.swiper-button-next {
 		right: 35%;
@@ -446,7 +469,6 @@
 		}
 	}
 }
-
 @media (max-width:767.98px) {
 	.button__style {
 		width: 100%;
