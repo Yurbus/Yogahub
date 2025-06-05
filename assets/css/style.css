@@ -101,7 +101,20 @@
   align-items: center;
   gap: 10px;
   position: relative;
+  position: relative;
+}
+.hero__body:after {
+  content: "";
+  position: absolute;
+  top: -35px;
+  right: -35%;
+  background: url("../img/main-bg.svg") no-repeat;
+  width: 100%;
+  height: 120%;
+}
+.hero__body .body__text {
   z-index: 2;
+  position: relative;
 }
 .hero__body .body__text .hero__text {
   display: inline-flex;
@@ -118,6 +131,10 @@
 .hero__body .body__text .hero__btn img {
   width: 60px;
   margin-right: 6px;
+}
+.hero__body .body__image {
+  z-index: 2;
+  position: relative;
 }
 .hero__body .body__image img {
   max-width: 545px;
@@ -193,6 +210,7 @@
 .recept__cart .cart__btn .recept__btn {
   font-size: 16px;
 }
+
 /*============== stylish ==============================*/
 .stylish {
   position: relative;
@@ -210,6 +228,7 @@
   margin: 44px auto 0;
   max-width: 288px;
 }
+
 /*============== meditation ==============================*/
 .meditation {
   position: relative;
