@@ -11,6 +11,7 @@
   --main-color-opacity: #FFDEDE;
   --text-color: #A16D6D;
   --dark-color: #000000c9;
+  --footer-text-color: #a16d6d;
 }
 
 .wrapper {
@@ -31,14 +32,14 @@
 }
 
 .title__h1 {
-  font-family: var(--font-family-2);
+  font-family: var(--font-family);
   font-weight: 900;
   font-size: clamp(26px, 4vw, 54px);
   text-transform: uppercase;
 }
 
 .title__h2 {
-  font-family: var(--font-family-2);
+  font-family: var(--font-family);
   font-size: clamp(26px, 4vw, 44px);
   font-weight: 800;
 }
@@ -402,7 +403,7 @@
   z-index: 3;
 }
 .footer .space__body .space__text h3 {
-  font-family: var(--font-family-2);
+  font-family: var(--font-family);
   font-weight: 800;
   font-size: 42px;
   font-size: clamp(26px, 4vw, 42px);
@@ -424,8 +425,42 @@
   background: var(--bg-cards);
   padding: 60px 0;
 }
+.footer .footer__body .footer-body_container {
+  display: flex;
+  justify-content: space-between;
+}
 .footer .footer__body .footer__logo img {
   max-width: 208px;
+}
+.footer .footer__body .media {
+  display: flex;
+}
+.footer .footer__body .media .media__ul {
+  display: flex;
+  align-items: center;
+}
+.footer .footer__body .media .media__ul li {
+  margin-right: 10px;
+  font-weight: 800;
+  font-size: 12px;
+  text-align: right;
+  color: var(--footer-text-color);
+}
+.footer .footer__body .media .media__ul li a {
+  display: flex;
+  align-items: center;
+}
+.footer .footer__body .media .media__ul li a img {
+  width: 32px;
+  height: 32px;
+  margin: 0 5px;
+}
+.footer .footer__body .media .social {
+  margin-right: 40px;
+}
+.footer .footer__body .media .email li a {
+  font-weight: 700;
+  font-size: 18px;
 }
 
 /*================ Food style pages ============================*/
@@ -515,6 +550,19 @@
   }
   .training:before {
     width: 0;
+  }
+  .footer .footer__body .footer-body_container {
+    flex-direction: column;
+  }
+  .footer .footer__body .media {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .footer .footer__body .media .social {
+    margin-right: 0;
+  }
+  .footer .footer__body .media .email {
+    margin-top: 15px;
   }
 }
 @media (max-width: 639.98px) {
