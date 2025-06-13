@@ -159,14 +159,14 @@ body._lock {
   padding: 48px 32px;
 }
 .wrap__content h3 {
-  font-family: var(--font-family-2);
+  font-family: var(--font-family);
   font-weight: 900;
   font-size: 32px;
   line-height: 100%;
 }
 .wrap__content span {
   display: inline-block;
-  font-family: var(--font-family-2);
+  font-family: var(--font-family);
   font-weight: 900;
   font-size: 16px;
   line-height: 100%;
