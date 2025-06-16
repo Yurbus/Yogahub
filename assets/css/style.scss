@@ -37,7 +37,7 @@
 }
 .title__h2 {
 	font-family: var(--font-family);
-	font-size: clamp(26px, 4vw, 44px);
+	font-size: clamp(24px, 4vw, 44px);
 	font-weight: 800;
 }
 
@@ -115,7 +115,7 @@
 			display: inline-flex;
 			font-family: var(--font-family-3);
 			font-weight: 500;
-			font-size: clamp(14px, 4vw, 24px);
+			font-size: clamp(14px, 4vw, 20px);
 			line-height: 120%;
 			margin: 15px 0;
 		}
