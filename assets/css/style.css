@@ -86,6 +86,25 @@
   background: var(--main-color-hover);
 }
 
+.border-button__style {
+  padding: 21px 32px;
+  border-radius: 12px;
+  color: var(--main-color);
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease 0s;
+  border: 1px solid var(--main-color);
+}
+.border-button__style:hover {
+  background: var(--main-color-hover);
+  color: #fff;
+}
+
 /*================ hero ===========================*/
 .hero {
   padding-bottom: 150px;
