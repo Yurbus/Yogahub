@@ -111,6 +111,13 @@
 	.body__text {
 		z-index: 2;
 		position: relative;
+		.hero__title  {
+			max-width: 690px;
+			img {
+				width: 50px;
+				height: 50px;
+			}
+		}
 		.hero__text {
 			display: inline-flex;
 			font-family: var(--font-family-3);
@@ -182,7 +189,8 @@
 	.wrapp__cart {
 		.cart__text {
 			display: flex;
-			align-items: center;
+			align-items: flex-start;
+			flex-direction: column;
 			margin: 15px 18px;
 			img {
 				width: 26px;
@@ -196,6 +204,10 @@
 				line-height: 100%;
 				text-transform: uppercase;
 			}
+		}
+		p {
+			padding: 0 18px;
+			min-height: 120px;
 		}
 	}
 	.cart__btn {

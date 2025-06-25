@@ -118,6 +118,13 @@
   z-index: 2;
   position: relative;
 }
+.hero__body .body__text .hero__title {
+  max-width: 690px;
+}
+.hero__body .body__text .hero__title img {
+  width: 50px;
+  height: 50px;
+}
 .hero__body .body__text .hero__text {
   display: inline-flex;
   font-family: var(--font-family-3);
@@ -191,7 +198,8 @@
 }
 .recept__cart .wrapp__cart .cart__text {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
   margin: 15px 18px;
 }
 .recept__cart .wrapp__cart .cart__text img {
@@ -205,6 +213,10 @@
   font-size: 24px;
   line-height: 100%;
   text-transform: uppercase;
+}
+.recept__cart .wrapp__cart p {
+  padding: 0 18px;
+  min-height: 120px;
 }
 .recept__cart .cart__btn {
   margin: 30px 18px 15px;
