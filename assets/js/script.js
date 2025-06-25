@@ -26,6 +26,49 @@ const isMobile = {
     }
 };
 
+
+const buttons = document.querySelectorAll('.listen-button');
+const audios = document.querySelectorAll('audio');
+
+let currentAudio = null;
+let currentButton = null;
+
+buttons.forEach(button => {
+  const audioId = button.getAttribute('data-audio');
+  const audio = document.getElementById(audioId);
+
+  button.addEventListener('click', () => {
+    // Останавливаем текущий трек если другой
+    if (currentAudio && currentAudio !== audio) {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+      if (currentButton) currentButton.textContent = 'Слухати ▶ ';
+    }
+
+    // Переключение play/pause
+    if (audio.paused) {
+      audio.play();
+      button.textContent = ' Пауза ⏸';
+      currentAudio = audio;
+      currentButton = button;
+    } else {
+      audio.pause();
+      button.textContent = 'Слухати ▶';
+      currentAudio = null;
+      currentButton = null;
+    }
+  });
+
+  // Сброс кнопки после окончания трека
+  audio.addEventListener('ended', () => {
+    button.textContent = 'Слухати ▶';
+    if (currentAudio === audio) {
+      currentAudio = null;
+      currentButton = null;
+    }
+  });
+});
+
 // ------- Section about прокрутка чисел ---------------------------------------
 // document.addEventListener('DOMContentLoaded', () => {
 //     const statsBlock = document.getElementById('stats');

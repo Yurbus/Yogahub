@@ -386,6 +386,16 @@
   margin-left: 8px;
 }
 
+button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+audio {
+  display: none;
+}
+
 /*============== training ==============================*/
 .training {
   position: relative;
@@ -401,7 +411,7 @@
 }
 
 .training__body {
-  margin-top: 28px;
+  margin-top: 44px;
   position: relative;
   z-index: 2;
 }
