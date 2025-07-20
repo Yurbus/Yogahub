@@ -164,16 +164,16 @@ buttons.forEach(button => {
 
 // --------- header------------------------------------------------
 
-// window.addEventListener('scroll', function () {
-//     const header = document.getElementById('header');
-//     if (window.scrollY > 50) {  
-//         header.style.top = '0px'; 
-//         header.style.backgroundColor = 'white'; 
-//     } else {
-//         header.style.top = '52px'; 
-//         header.style.backgroundColor = 'transparent'; 
-//     }
-// });
+window.addEventListener('scroll', function () {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {  
+        header.style.top = '0px'; 
+        header.style.backgroundColor = 'white'; 
+    } else {
+        header.style.top = '0px'; 
+        header.style.backgroundColor = 'transparent'; 
+    }
+});
 
 
 

@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Exo+2:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Exo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -25,10 +26,28 @@
     <div class="wrapper">
         <!-- ===================================== Header ======================================== -->
         <!-- data-aos="fade-up" data-aos-duration="1500"  -->
-		<header class="header">
+		<header id="header" class="header">
             <div class="header__container _container">
                 <div class="header__body">
-                    <a href="index.html" class="header__logo"><img src="assets/img/logo_big.png" alt=""></a>
+                    <div class="header__logo">
+                        <a href="index.html" class="header__logo"><img src="assets/img/logo-new.png" alt="logo"></a>
+                    </div>
+                    <div class="header__menu">
+                        <ul class="menu__list">
+                            <li class="menu__link"><a href="">Рецепти</a></li>
+                            <li class="menu__link"><a href="">Образи</a></li> 
+                            <li class="menu__link"><a href="#">Медетації</a></li>
+                            <li class="menu__link"><a href="#">Тренування</a></li>
+                            <li class="menu__link"><a href="#">Про простір </a></li>
+                        </ul> 
+                    </div>
+                    <div class="header__button">
+                        <a href="" class="present-btn">🎁 Твій подарунок відкрито</a>
+                    </div>
+                </div>
+                 <!-- Mobile menu burger -->
+                <div class="menu__icon">
+                    <span></span>
                 </div>
             </div>
         </header>

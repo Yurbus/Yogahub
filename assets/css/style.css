@@ -1,8 +1,6 @@
 :root {
-  --font-family: "Nunito Sans", sans-serif;
-  --font-family-2: "Nunito", sans-serif;
-  --font-family-3: "Montserrat", sans-serif;
-  --font-family-exo: "Exo 2", sans-serif;
+  --font-family-exo: "Exo", sans-serif;
+  --font-family-exo2: "Exo 2", sans-serif;
   --font-size: 16px;
   --font-weight: 400;
   --bg-page: #FFF9F2;
@@ -33,48 +31,46 @@
 }
 
 .title__h1 {
-  font-family: var(--font-family);
-  font-weight: 900;
+  font-weight: 700;
   font-size: clamp(26px, 4vw, 54px);
   text-transform: uppercase;
 }
 
 .title__h2 {
-  font-family: var(--font-family);
   font-size: clamp(28px, 4vw, 44px);
   font-weight: 800;
 }
 
 .header {
-  position: relative;
-  z-index: 5;
-  padding: 44px 0 24px;
-}
-.header::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
+  position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  background: white;
+  z-index: 5;
+  padding: 44px 0 24px;
 }
 
 .header__body {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .header__body .header__logo {
   max-width: 208px;
   display: inline-block;
   z-index: 2;
 }
-
+.header__body .menu__list {
+  display: flex;
+}
+.header__body .menu__list .menu__link {
+  margin: 0 14px;
+}
 .button__style {
   padding: 21px 32px;
   border-radius: 12px;
   background: var(--main-color);
   color: #fff;
-  font-family: var(--font-family);
   font-weight: 900;
   font-size: 18px;
   line-height: 100%;
@@ -91,7 +87,6 @@
   padding: 21px 32px;
   border-radius: 12px;
   color: var(--main-color);
-  font-family: var(--font-family);
   font-weight: 900;
   font-size: 18px;
   line-height: 100%;
@@ -147,7 +142,6 @@
 }
 .hero__body .body__text .hero__text {
   display: inline-flex;
-  font-family: var(--font-family-3);
   font-weight: 500;
   font-size: clamp(14px, 4vw, 20px);
   line-height: 120%;
@@ -195,7 +189,6 @@
 .section__title-block .block__sub-text {
   margin: 0 auto;
   max-width: 874px;
-  font-family: var(--font-family-3);
   font-weight: 500;
   font-size: clamp(16px, 4vw, 18px);
   line-height: 100%;
@@ -228,7 +221,6 @@
   margin-right: 5px;
 }
 .recept__cart .wrapp__cart .cart__text span {
-  font-family: var(--font-family);
   font-weight: 900;
   font-size: 24px;
   line-height: 100%;
@@ -367,7 +359,6 @@
 }
 
 .wrapp__cart-text h3 {
-  font-family: var(--font-family);
   font-weight: 900;
   font-size: 24px;
   line-height: 100%;
@@ -436,7 +427,6 @@ audio {
 .training__body .item__tr-text .item__tr-descr {
   font-size: clamp(16px, 4vw, 20px);
   line-height: 130%;
-  font-family: var(--font-family);
 }
 
 /*================ footer ============================*/
@@ -472,7 +462,6 @@ audio {
   z-index: 3;
 }
 .footer .space__body .space__text h3 {
-  font-family: var(--font-family);
   font-weight: 800;
   font-size: 42px;
   font-size: clamp(26px, 4vw, 42px);
@@ -480,7 +469,6 @@ audio {
   margin-bottom: 12px;
 }
 .footer .space__body .space__text p {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
@@ -542,7 +530,6 @@ audio {
   padding: 18px;
 }
 .food__text span {
-  font-family: var(--font-family);
   font-weight: 900;
   font-size: 20px;
   line-height: 100%;
