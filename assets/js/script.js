@@ -126,24 +126,30 @@ buttons.forEach(button => {
 
 
 // Меню бурнер
-// const iconMenu = document.querySelector('.menu__icon');
-// const menuBody = document.querySelector('.menu__body');
+const iconMenu = document.querySelector('.menu__icon');
+const menuBody = document.querySelector('.header__right');
+if (iconMenu) {
+	iconMenu.addEventListener("click", function (e) {
+		document.body.classList.toggle('_lock');
+		iconMenu.classList.toggle('_active');
+		menuBody.classList.toggle('_active');
+	});
+}
 
-// if (iconMenu) {
-// 	iconMenu.addEventListener("click", function (e) {
-// 		document.body.classList.add('_lock');
-// 		iconMenu.classList.add('_active');
-// 		menuBody.classList.add('_active');
-// 	});
-// }
-// const IconClose = document.querySelector('.burger');
-// if (IconClose) {
-// 	IconClose.addEventListener("click", function (e) {
-// 		document.body.classList.remove('_lock');
-// 		iconMenu.classList.remove('_active');
-// 		menuBody.classList.remove('_active');
-// 	});
-// }
+const headerRight = document.querySelector('.header__right');
+
+const observer = new MutationObserver(() => {
+  if (headerRight.classList.contains('_active')) {
+    header.classList.add('dark-overlay');
+  } else {
+    header.classList.remove('dark-overlay');
+  }
+});
+
+observer.observe(headerRight, {
+  attributes: true,
+  attributeFilter: ['class']
+});
 
 // -------- Accordion -----------------------------------------
 // var acc = document.getElementsByClassName("accordion");
