@@ -246,6 +246,7 @@
 		top: -2px;
 		left: 0;
 		background: url('../img/top-grad.svg') no-repeat;
+		background-size: contain;
 		width: 100%;
 		height: 100%;
 	}
@@ -254,7 +255,9 @@
 		position: absolute;
 		bottom: -56em;
 		left: 0;
+		right: 0;
 		background: url('../img/bottom-grad.svg') no-repeat;
+		background-size: contain;
 		width: 100%;
 		height: 100%;
 	}
@@ -346,15 +349,15 @@
 /*============== meditation ==============================*/
 .meditation {
 	position: relative;
-	&:before {
-		content: '';
-		position: absolute;
-		top: -35%;
-		right: 0;
-		background: url('../img/Group-55.svg') no-repeat;
-		width: 20%;
-		height: 100%;
-	}
+	// &:before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	top: -35%;
+	// 	right: 0;
+	// 	background: url('../img/Group-55.svg') no-repeat;
+	// 	width: 20%;
+	// 	height: 100%;
+	// }
 }
 .swiper {
 	width: 100%;
