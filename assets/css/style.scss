@@ -6,6 +6,7 @@
 	--font-weight: 400;
 	--bg-page: #FFF9FA;
 	--bg-cards: #FFEAE8;
+	--rose: #CE4370;
 	--main-color: #E883A3;
 	--main-color-hover: #dd7c8f;
 	--main-color-opacity: #FFDEDE;
@@ -37,15 +38,15 @@
 	font-size: clamp(24px, 5vw, 42px);
 	font-weight: 700;
 	text-transform: uppercase;
-
+	color: var(--rose);
 }
 
 .button__style {
 	padding: 21px 32px;
-	border-radius: 12px;
+	border-radius: 35px;
 	background: var(--main-color);
 	color: #fff;
-	font-weight: 900;
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 100%;
 	display: flex;
@@ -72,6 +73,9 @@
 		background: var(--main-color-hover);
 		color: #fff;
 	}
+}
+.text-rose {
+	color: var(--rose);
 }
 
 /*================ header =========================*/
@@ -270,8 +274,8 @@
 	z-index: 2;
 	.block__sub-text {
 		margin: 0 auto;
-		max-width: 874px;
-		font-weight: 500;
+		max-width: 680px;
+		font-weight: 400;
 		font-size: clamp(16px, 4vw, 18px);
 		line-height: 100%;
 		text-align: center;
@@ -287,13 +291,16 @@
 }
 .recept__cart {
 	background: var(--bg-cards);
-	border-radius: 12px;
+	border-radius: 30px;
 	overflow: hidden;
 	.wrapp__cart {
+		color: var(--rose);
+		img {
+			border-radius: 30px;
+		}
 		.cart__text {
 			display: flex;
 			align-items: flex-start;
-			flex-direction: column;
 			margin: 15px 18px;
 			img {
 				width: 26px;
@@ -301,7 +308,7 @@
 				margin-right: 5px;
 			}
 			span {
-				font-weight: 900;
+				font-weight: 700;
 				font-size: 24px;
 				line-height: 100%;
 				text-transform: uppercase;
@@ -331,6 +338,32 @@
 	grid-template-columns: repeat(4, 1fr);
 	gap: 10px;
 	margin-top: 44px;
+	.gall-a {
+		color: var(--rose);
+		font-family: var(--font-family-exo);
+		img {
+			border-radius: 30px;
+		}
+		h3 {
+			font-size: 24px;
+			font-weight: 600;
+			margin-bottom: 12px;
+			text-transform: uppercase;
+		}
+		p {
+
+		}
+		span {
+			display: flex;
+			align-items: center;
+			color: var(--main-color);
+			img {
+				width: 25px;
+				margin-top: 5px;
+				margin-left: 3px;
+			}
+		}
+	}
 }
 .stylish__btn {
 	margin: 44px auto 0;
@@ -338,6 +371,7 @@
 		font-size: 18px;
 		text-align: center;
 		margin-bottom: 12px;
+		color: var(--rose);
 	}
 	.button__stylish {
 		max-width: 286px;
