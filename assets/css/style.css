@@ -297,7 +297,7 @@
 }
 
 .recept__cart {
-  background: var(--bg-cards);
+  background: linear-gradient(90deg, #fff9fa 0%, #fef1f7 100%);
   border-radius: 30px;
   overflow: hidden;
 }
@@ -957,15 +957,21 @@ audio {
   }
   .training__body .training__item {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 10px;
     margin-bottom: 40px;
   }
   .training__body .training__item .item__tr-video {
-    order: 2;
+    order: 1;
+  }
+  .training__body .training__item .item__tr-video .time__play .play-line {
+    width: 85%;
+    height: 6px;
   }
   .training__body .training__item .item__tr-text {
-    order: 1;
-    text-align: center;
+    order: 2;
+  }
+  .training__body .item__tr-text .training_btn {
+    max-width: 187px;
   }
   .footer .footer__body .footer-body_container {
     flex-direction: column;
