@@ -693,15 +693,17 @@ audio {
 
 /*================ Food style pages ============================*/
 .food__title {
+  font-family: var(--font-family-exo2);
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .food__text {
   padding: 18px;
 }
 .food__text span {
-  font-weight: 900;
+  font-weight: 700;
+  font-family: var(--font-family-exo2);
   font-size: 20px;
   line-height: 100%;
   height: 43px;
@@ -1009,7 +1011,7 @@ audio {
     max-width: 160px;
   }
   .footer .space__body .space__img {
-    margin-top: -15em;
+    margin-top: -14em;
     margin-left: -11em;
     position: relative;
     z-index: 4;
