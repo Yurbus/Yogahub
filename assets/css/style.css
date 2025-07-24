@@ -710,6 +710,10 @@ audio {
   display: inline-block;
 }
 
+.padding_top {
+  padding-top: 120px;
+}
+
 @media (min-width: 1510px) {
   ._container {
     max-width: 1490px;
