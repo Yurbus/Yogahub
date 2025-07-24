@@ -242,6 +242,32 @@
                                             </p>
                                         </div>
                                         <div class="medit__btn">
+                                            <div class="pink__line"></div>
+                                            <button id="playButton" data-audio="track1" class="listen-button button__medit border-button__style">
+                                                Слухати 
+                                                <img src="assets/img/video_fill.svg" alt="">
+                                            </button>
+
+                                            <audio id="track1" controls>
+                                                <source src="assets/Dancing-With-An-Angel.mp3" controls  type="audio/mpeg">
+                                            </audio>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="medit__cart">
+                                        <div class="medit__cart-img">
+                                            <img src="assets/img/med-1.png" alt="">
+                                        </div>
+                                        <div class="medit__cart-text">
+                                            <h3>Медитація вдячності</h3>
+                                            <p>
+                                                Знайдіть внутрішній спокій і навчіться цінувати кожен момент. 
+                                                Ця практика відкриває щастя в простому та наповнює серце теплом.
+                                            </p>
+                                        </div>
+                                        <div class="medit__btn">
+                                            <div class="pink__line"></div>
                                             <button id="playButton" data-audio="track1" class="listen-button button__medit border-button__style">
                                                 Слухати 
                                                 <img src="assets/img/video_fill.svg" alt="">
@@ -267,6 +293,7 @@
                                             </p>
                                         </div>
                                         <div class="medit__btn">
+                                            <div class="pink__line"></div>
                                             <button id="playButton" data-audio="track1" class="listen-button button__medit border-button__style">
                                                 Слухати 
                                                 <img src="assets/img/video_fill.svg" alt="">
@@ -292,31 +319,7 @@
                                             </p>
                                         </div>
                                         <div class="medit__btn">
-                                            <button id="playButton" data-audio="track1" class="listen-button button__medit border-button__style">
-                                                Слухати 
-                                                <img src="assets/img/video_fill.svg" alt="">
-                                            </button>
-
-                                            <audio id="track1" controls>
-                                                <source src="assets/Dancing-With-An-Angel.mp3" controls  type="audio/mpeg">
-                                            </audio>
-                                        </div> 
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="medit__cart">
-                                        <div class="medit__cart-img">
-                                            <img src="assets/img/med-1.png" alt="">
-                                        </div>
-                                        <div class="medit__cart-text">
-                                            <h3>Медитації для душі</h3>
-                                            <p>
-                                                Кожна аудіомедитація створена, щоб подарувати спокій, сфокусуватись на 
-                                                собі й перезавантажити тіло та думки.
-                                                Слухай вранці, ввечері або тоді, коли відчуваєш — час обрати себе.
-                                            </p>
-                                        </div>
-                                        <div class="medit__btn">
+                                            <div class="pink__line"></div>
                                             <button id="playButton" data-audio="track1" class="listen-button button__medit border-button__style">
                                                 Слухати 
                                                 <img src="assets/img/video_fill.svg" alt="">
@@ -397,15 +400,11 @@
                 <div class="_container">
                     <div class="section__title-block training__title-block">
                         <h2 class="title__h2">Тренування для тіла</h2>
-                        <p class="block__sub-text">Слухай тіло. Рухайся з любов’ю.</p>
+                        <p class="block__sub-text text-rose">Слухай тіло. Рухайся з любов’ю.</p>
                     </div>
                     <div class="training__body">
 
                         <div class="training__item">
-                            <div class="item__tr-video">
-                                <iframe src="https://drive.google.com/file/d/13B2FIZPv4-EZIw7ovzYntYyBsRCaEyor/preview" 
-                                frameborder="0" allow="autoplay"></iframe>
-                            </div>
                             <div class="item__tr-text">
                                 <h3 class="item__tr-title">UPPER BODY</h3>
                                 <p class="item__tr-descr">
@@ -413,10 +412,27 @@
                                     Формує м’язову витримку, покращує поставу та допомагає зміцнити корпус. 
                                     Підходить для тих, хто хоче працювати над формою впевнено та без перевантаження.
                                 </p>
+                                <button class="training_btn button__style">Дивитись</button>
+                            </div>
+                            <div class="item__tr-video">
+                                <iframe src="https://drive.google.com/file/d/13B2FIZPv4-EZIw7ovzYntYyBsRCaEyor/preview" 
+                                frameborder="0" allow="autoplay"></iframe>
+                                <div class="time__play">
+                                    <div class="play-line"></div>
+                                    <div class="play-num">25:21</div>
+                                </div>
                             </div>
                         </div>
 
-                          <div class="training__item training__item-reverse">
+                        <div class="training__item training__item-reverse">
+                            <div class="item__tr-video">
+                                <iframe src="https://drive.google.com/file/d/12_oYwgiz9Gf_8kcOhWD3miEdfQ5Fm66q/preview" 
+                                frameborder="0" allow="autoplay"></iframe>
+                                <div class="time__play">
+                                    <div class="play-line"></div>
+                                    <div class="play-num">10:54</div>
+                                </div>
+                            </div>
                             <div class="item__tr-text">
                                 <h3 class="item__tr-title">LOWER BODY</h3>
                                 <p class="item__tr-descr">
@@ -424,24 +440,45 @@
                                     Допомагає сформувати тонус нижньої частини тіла, покращити стабільність та силу. 
                                     Ідеально підходить для регулярного навантаження вдома або в залі.
                                 </p>
-                            </div>
-                            <div class="item__tr-video">
-                               <iframe src="https://drive.google.com/file/d/12_oYwgiz9Gf_8kcOhWD3miEdfQ5Fm66q/preview" 
-                                frameborder="0" allow="autoplay"></iframe>
+                                <button class="training_btn button__style">Дивитись</button>
                             </div>
                         </div>
 
-                         <div class="training__item">
-                            <div class="item__tr-video">
-                                <iframe src="https://drive.google.com/file/d/13B2FIZPv4-EZIw7ovzYntYyBsRCaEyor/preview" 
-                                frameborder="0" allow="autoplay"></iframe>
-                            </div>
+                        <div class="training__item">
                             <div class="item__tr-text">
                                 <h3 class="item__tr-title">FUll BODY</h3>
                                 <p class="item__tr-descr">
                                     Комплекс вправ для всіх груп м’язів, що поєднує силу, гнучкість і баланс. 
                                     Ідеально для розвитку тіла та підтримки тонусу.
                                 </p>
+                                <button class="training_btn button__style">Дивитись</button>
+                            </div>
+                            <div class="item__tr-video">
+                                <iframe src="https://drive.google.com/file/d/13B2FIZPv4-EZIw7ovzYntYyBsRCaEyor/preview" 
+                                frameborder="0" allow="autoplay"></iframe>
+                                <div class="time__play">
+                                    <div class="play-line"></div>
+                                    <div class="play-num">25:21</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="training__item training__item-reverse">
+                            <div class="item__tr-video">
+                                <iframe src="https://drive.google.com/file/d/12_oYwgiz9Gf_8kcOhWD3miEdfQ5Fm66q/preview" 
+                                frameborder="0" allow="autoplay"></iframe>
+                                <div class="time__play">
+                                    <div class="play-line"></div>
+                                    <div class="play-num">10:54</div>
+                                </div>
+                            </div>
+                            <div class="item__tr-text">
+                                <h3 class="item__tr-title">STRETCHING</h3>
+                                <p class="item__tr-descr">
+                                    Розтяжка для відновлення, гнучкості та м’якого перезавантаження. Знімає напругу після тренувань або 
+                                    наприкінці активного дня. Покращує рухливість тіла та допомагає зберігати внутрішній баланс.
+                                </p>
+                                <button class="training_btn button__style">Дивитись</button>
                             </div>
                         </div>
 
@@ -493,12 +530,10 @@
                     <a href="" class="footer__logo"><img src="assets/img/logo_big.png" alt=""></a>
                     <div class="media">
                         <ul class="social media__ul">
-                            <li>Social media:</li>
                             <li><a target="_blank" href="https://www.instagram.com/yogahub.ua?igsh=dzMwNHRucDM4emNu"><img src="assets/img/inst.svg" alt=""></a></li>
                             <li><a target="_blank" href="https://t.me/salefanatka"><img src="assets/img/telegram.svg" alt=""></a></li>   
                         </ul>
                         <ul class="email media__ul">
-                            <li>Email:</li>
                             <li><a href="mailto:fanatkastudio@gmail.com">fanatkastudio@gmail.com</a></li> 
                         </ul>
                     </div>
