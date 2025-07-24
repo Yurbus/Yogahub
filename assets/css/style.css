@@ -84,6 +84,10 @@
   color: var(--rose);
 }
 
+.white-text {
+  color: #fff;
+}
+
 /*================ header =========================*/
 .mobile-menu {
   display: none;
@@ -369,15 +373,21 @@
 .gallery .gall-a span {
   display: flex;
   align-items: center;
-  color: var(--main-color);
   padding: 0 18px;
   margin-bottom: 12px;
 }
-.gallery .gall-a span img {
+.gallery .gall-a span a {
+  color: var(--main-color);
+}
+.gallery .gall-a span a img {
   width: 25px;
   padding-top: 4px;
   margin-left: 3px;
   margin-bottom: 0;
+}
+.gallery .gall-a:nth-child(1),
+.gallery .gall-a:nth-child(4) {
+  transform: translateY(40px);
 }
 
 .stylish__btn {
@@ -389,19 +399,22 @@
   margin-bottom: 12px;
   color: var(--rose);
 }
-.stylish__btn .button__stylish {
-  max-width: 286px;
-  margin: 0 auto;
-}
 
 /*============== meditation ==============================*/
 .meditation {
   position: relative;
+  background: url("../img/medit-bg.svg") top no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.meditation__body {
+  padding-bottom: 80px;
 }
 
 .swiper {
   width: 100%;
-  height: 660px;
+  height: 680px;
   position: relative;
 }
 
@@ -463,14 +476,16 @@
 
 .medit__cart {
   display: grid;
-  grid-template-columns: minmax(150px, 300px) 1fr;
-  background: var(--bg-cards);
-  border-radius: 12px;
+  grid-template-columns: 1fr;
+  background: linear-gradient(90deg, #fff9fa 0%, #fef1f7 100%);
   overflow: hidden;
+  padding: 20px;
+  border-radius: 30px;
 }
 
 .medit__cart-img img {
-  height: 100%;
+  height: 204px;
+  border-radius: 24px;
 }
 
 .medit__cart-text {
@@ -478,15 +493,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: var(--rose);
 }
-
-.wrapp__cart-text h3 {
-  font-weight: 900;
+.medit__cart-text h3 {
+  font-weight: 600;
   font-size: 24px;
   line-height: 100%;
   margin-bottom: 12px;
 }
-.wrapp__cart-text p {
+.medit__cart-text p {
   font-weight: 500;
   font-size: 16px;
 }
@@ -513,15 +528,6 @@ audio {
 /*============== training ==============================*/
 .training {
   position: relative;
-}
-.training:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: url("../img/Group-11.svg") no-repeat;
-  width: 100%;
-  height: 100%;
 }
 
 .training__body {

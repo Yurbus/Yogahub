@@ -14,8 +14,11 @@
             320: {
                 slidesPerView: 1,
                 },
-            960: {
+            767: {
                 slidesPerView: 2,
+                },
+            960: {
+                slidesPerView: 3,
             },
         },
     });

@@ -77,6 +77,9 @@
 .text-rose {
 	color: var(--rose);
 }
+.white-text {
+	color: #fff;
+}
 
 /*================ header =========================*/
 
@@ -364,16 +367,22 @@
 		span {
 			display: flex;
 			align-items: center;
-			color: var(--main-color);
 			padding: 0 18px;
 			margin-bottom: 12px;
-			img {
+			a {
+				color: var(--main-color);
+				img {
 				width: 25px;
 				padding-top: 4px;
 				margin-left: 3px;
 				margin-bottom: 0;
 			}
+			}
 		}
+	}
+	.gall-a:nth-child(1),
+	.gall-a:nth-child(4) {
+		transform: translateY(40px);
 	}
 }
 .stylish__btn {
@@ -384,29 +393,22 @@
 		margin-bottom: 12px;
 		color: var(--rose);
 	}
-	.button__stylish {
-		max-width: 286px;
-		margin: 0 auto;
-	}
 }
 
 
 /*============== meditation ==============================*/
 .meditation {
 	position: relative;
-	// &:before {
-	// 	content: '';
-	// 	position: absolute;
-	// 	top: -35%;
-	// 	right: 0;
-	// 	background: url('../img/Group-55.svg') no-repeat;
-	// 	width: 20%;
-	// 	height: 100%;
-	// }
+	background: url('../img/medit-bg.svg') top no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+.meditation__body {
+	padding-bottom: 80px;
 }
 .swiper {
 	width: 100%;
-	height: 660px;
+	height: 680px;
 	position: relative;
 }
 .swiper-slide {
@@ -458,14 +460,16 @@
 }
 .medit__cart {
 	display: grid;
-	grid-template-columns: minmax(150px, 300px) 1fr;
-	background: var(--bg-cards);
-	border-radius: 12px;
+	grid-template-columns: 1fr;
+	background: linear-gradient(90deg, #fff9fa 0%, #fef1f7 100%);
 	overflow: hidden;
+	padding: 20px;
+	border-radius: 30px;
 }
 .medit__cart-img {
 	img {
-		height: 100%;
+		height:204px;
+		border-radius: 24px;
 	}
 }
 .medit__cart-text {
@@ -473,10 +477,9 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-}
-.wrapp__cart-text {
+	color: var(--rose);
 	h3 {
-		font-weight: 900;
+		font-weight: 600;
 		font-size: 24px;
 		line-height: 100%;
 		margin-bottom: 12px;
@@ -502,20 +505,20 @@ button {
 	width: 100%;	
 }
 audio {
-  display: none;
+	display: none;
 }
 /*============== training ==============================*/
 .training {
 	position: relative;
-	&:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		background: url('../img/Group-11.svg') no-repeat;
-		width: 100%;
-		height: 100%;
-	}
+	// &:before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	background: url('../img/Group-11.svg') no-repeat;
+	// 	width: 100%;
+	// 	height: 100%;
+	// }
 }
 .training__body {
 	margin-top: 44px;
