@@ -427,6 +427,10 @@
   width: 100%;
 }
 
+.meditation__title-block h2 {
+  color: #fff;
+}
+
 .meditation__body {
   padding-bottom: 80px;
 }
