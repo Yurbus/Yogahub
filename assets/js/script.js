@@ -98,7 +98,48 @@ if(menuLinks.length > 0) {
 	}
 }
 
+// Active link
+document.addEventListener('DOMContentLoaded', () => {
+    const menuLinks = document.querySelectorAll('.menu__list a[data-goto]');
+    const sections = [];
 
+    menuLinks.forEach(link => {
+        const selector = link.dataset.goto;
+        const section = document.querySelector(selector);
+        if (section) {
+            sections.push({
+                link: link,
+                section: section
+            });
+        }
+    });
+
+    function onScroll() {
+        let scrollY = window.scrollY;
+
+        sections.forEach(({ link, section }) => {
+            const sectionTop = section.offsetTop - 100;
+            const sectionHeight = section.offsetHeight;
+            const isActive = scrollY >= sectionTop && scrollY < sectionTop + sectionHeight;
+
+            link.classList.toggle('active', isActive);
+        });
+    }
+
+    window.addEventListener('scroll', onScroll);
+    onScroll(); // вызов при загрузке
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const currentPage = location.pathname.split('/').pop(); // получаем имя файла
+
+    document.querySelectorAll('.menu__list a').forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage) {
+            link.classList.add('active');
+        }
+    });
+});
 // ------- Section about прокрутка чисел ---------------------------------------
 // document.addEventListener('DOMContentLoaded', () => {
 //     const statsBlock = document.getElementById('stats');

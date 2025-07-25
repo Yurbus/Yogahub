@@ -148,6 +148,10 @@
   color: var(--main-color-hover);
   text-decoration: underline;
 }
+.header__menu .menu__link a.active {
+  color: var(--rose); /* пример цвета */
+  font-weight: 700;
+}
 
 .header__button {
   background: #FEF1F7;

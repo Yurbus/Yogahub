@@ -105,6 +105,7 @@
     display: flex;
     align-items: center;
 }
+
 .header__menu {
 	display: flex;
 	align-items: center;
@@ -136,6 +137,10 @@
 	.menu__link a:hover {
 		color: var(--main-color-hover);
 		text-decoration: underline;
+	}
+	.menu__link a.active {
+		color: var(--rose); /* пример цвета */
+		font-weight: 700;
 	}
 }
 .header__button {
