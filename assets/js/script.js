@@ -48,7 +48,7 @@ buttons.forEach(button => {
     // Переключение play/pause
     if (audio.paused) {
       audio.play();
-      button.innerHTML = ' Пауза <img src="assets/img/pause.svg" alt="">';
+      button.innerHTML = 'Пауза <img src="assets/img/pause.svg" alt="">';
       currentAudio = audio;
       currentButton = button;
     } else {
