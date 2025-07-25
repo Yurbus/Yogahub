@@ -412,10 +412,10 @@
                                     Формує м’язову витримку, покращує поставу та допомагає зміцнити корпус. 
                                     Підходить для тих, хто хоче працювати над формою впевнено та без перевантаження.
                                 </p>
-                                <button class="training_btn button__style">Дивитись</button>
+                                <button id="playButton" class="training_btn button__style">Дивитись</button>
                             </div>
                             <div class="item__tr-video">
-                                <iframe src="https://drive.google.com/file/d/13B2FIZPv4-EZIw7ovzYntYyBsRCaEyor/preview" 
+                                <iframe id="videoFrame" src="https://drive.google.com/file/d/13B2FIZPv4-EZIw7ovzYntYyBsRCaEyor/preview" 
                                 frameborder="0" allow="autoplay"></iframe>
                                 <div class="time__play">
                                     <div class="play-line"></div>
@@ -564,6 +564,29 @@
                         enabled : true
                     }
                 });
+        </script> -->
+        <!-- <script>
+        document.querySelectorAll('.training_btn').forEach(button => {
+            button.addEventListener('click', () => {
+            const trainingItem = button.closest('.training__item');
+            const iframe = trainingItem.querySelector('iframe');
+
+            if (iframe) {
+                let src = iframe.src;
+
+                // Удаляем предыдущий autoplay=1, если есть
+                src = src.replace(/(\?|&)autoplay=1/, '');
+
+                // Добавляем autoplay=1
+                iframe.src = src + (src.includes('?') ? '&' : '?') + 'autoplay=1';
+
+                // Меняем текст кнопки
+                button.textContent = 'Переглянуто';
+                button.disabled = true; // Блокируем повторное нажатие
+                button.classList.add('played'); // Можно использовать для CSS-стилей
+            }
+            });
+        });
         </script> -->
 		<script>
 			AOS.init();
