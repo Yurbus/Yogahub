@@ -61,7 +61,7 @@ body._lock {
 /*----------Плавное появление magnific popup------------*/
 .mfp-fade.mfp-bg {
   opacity: 0;
-  background: var(--main-color);
+  background: var(--dark-color);
   transition: all 0.3s;
 }
 
@@ -157,38 +157,46 @@ body._lock {
 .wrap__content {
   position: relative;
   padding: 48px 32px;
+  color: var(--rose);
+  background: #FEF1F7;
+  border-radius: 12px;
 }
 .wrap__content h3 {
-  font-family: var(--font-family);
-  font-weight: 900;
-  font-size: 32px;
+  font-family: var(--font-family-exo2);
+  font-weight: 700;
+  font-size: 24px;
   line-height: 100%;
 }
 .wrap__content span {
   display: inline-block;
-  font-family: var(--font-family);
-  font-weight: 900;
-  font-size: 16px;
+  font-family: var(--font-family-exo2);
+  font-weight: 700;
+  font-size: 22px;
   line-height: 100%;
   margin: 32px 0 7px;
 }
 .wrap__content ul {
-  font-family: var(--font-family);
+  font-family: var(--font-family-exo2);
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
 }
 @media (max-width: 767.98px) {
   .popup__content {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .popup__content .popup__img img {
     height: 300px;
+    max-width: 100%;
   }
   .popup__content .wrap__content {
     padding: 24px 16px;
   }
   .popup__content .wrap__content h3 {
     font-size: 24px;
+  }
+  .popup__content .wrap__content span {
+    font-size: 18px;
+    text-transform: uppercase;
   }
 }/*# sourceMappingURL=reset.css.map */

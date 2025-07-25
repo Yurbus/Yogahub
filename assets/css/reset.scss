@@ -52,7 +52,7 @@ body._lock {
 .mfp-fade{
 	&.mfp-bg{
 		opacity: 0;
-		background: var(--main-color);
+		background: var(--dark-color);
 		transition: all .3s;
 	}
 }
@@ -171,22 +171,25 @@ body._lock {
 .wrap__content {
 	position: relative;
 	padding: 48px 32px;
+	color: var(--rose);
+	background: #FEF1F7;
+	border-radius: 12px;
 	h3 {
-		font-family: var(--font-family);
-		font-weight: 900;
-		font-size: 32px;
+		font-family: var(--font-family-exo2);
+		font-weight: 700;
+		font-size: 24px;
 		line-height: 100%;
 	}
 	span {
 		display: inline-block;
-		font-family: var(--font-family);
-		font-weight: 900;
-		font-size: 16px;
+		font-family: var(--font-family-exo2);
+		font-weight: 700;
+		font-size: 22px;
 		line-height: 100%;
 		margin: 32px 0 7px;
 	}
 	ul {
-		font-family: var(--font-family);
+		font-family: var(--font-family-exo2);
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 24px;
@@ -199,16 +202,21 @@ body._lock {
 
 @media (max-width:767.98px) {
 	.popup__content {
-		flex-direction: column;
+		flex-direction: column-reverse;
 		.popup__img {
 			img {
 				height: 300px;
+				max-width: 100%;
 			}
 		}
 		.wrap__content {
 			padding: 24px 16px;
 			h3 {
 				font-size: 24px;
+			}
+			span {
+				font-size: 18px;
+				text-transform: uppercase;
 			}
 		}
 	}
