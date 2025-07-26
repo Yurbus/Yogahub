@@ -36,7 +36,7 @@
 }
 .title__h2 {
 	font-size: clamp(24px, 5vw, 42px);
-	font-weight: 700;
+	font-weight: 600;
 	text-transform: uppercase;
 	color: var(--rose);
 }
@@ -208,18 +208,20 @@
 		.hero__text {
 			display: inline-flex;
 			font-weight: 500;
-			font-size: clamp(14px, 4vw, 20px);
+			font-size: clamp(14px, 4vw, 18px);
+			font-family: var(--font-family-exo2);
 			line-height: 120%;
 			margin: 15px 0;
 			max-width: 560px;
 			background: #FEF1F7;
 			border-radius: 30px;
 			padding: 10px 20px;
-			font-size: 18px;
 			font-weight: 400;
 		}
 		.mini-text {
 			font-size: 14px;
+			font-weight: 400;
+			font-family: var(--font-family-exo2);
 			color: #fff;
 		}
 		.hero__btn {
@@ -301,8 +303,10 @@
 	background: linear-gradient(90deg, #fff9fa 0%, #fef1f7 100%);
 	border-radius: 30px;
 	overflow: hidden;
+	position: relative;
 	.wrapp__cart {
 		color: var(--rose);
+		padding-bottom: 106px;
 		img {
 			border-radius: 30px;
 		}
@@ -328,9 +332,13 @@
 		}
 	}
 	.cart__btn {
-		margin: 30px 18px 15px;
+		position: absolute;
+		bottom: 10px;
+		margin: 10px 15px;
+		width: calc(100% - 30px);
 		.recept__btn {
 			font-size: 16px;
+			width: 100%;
 		}
 	}
 
@@ -368,8 +376,8 @@
 		}
 		p {
 			padding: 0 18px;
-			font-size: 20px;
-			font-weight: 600;
+			font-size: clamp(14px, 4vw, 20px);
+			font-weight: 500;
 			margin-bottom: 12px;
 		}
 		span {
@@ -435,6 +443,7 @@
 	height: 680px;
 	position: relative;
 }
+
 .swiper-slide {
 	display: flex;
 	justify-content: center;
@@ -526,7 +535,7 @@
 		background: var(--main-color);
 	}
 	.button__medit {
-		max-width: 160px;
+		max-width: 130px;
 		padding: 6px 13px;
 		border-radius: 30px;
 		font-weight: 900;
@@ -652,7 +661,7 @@ audio {
 				h4 {
 					font-weight: 700;
 					font-size: clamp(24px, 4vw, 42px);
-					line-height: 1.4;
+					line-height: 1.1;
 					text-transform: uppercase;
 				}
 				p {
@@ -732,7 +741,7 @@ audio {
 	span {
 		font-weight: 700;
 		font-family: var(--font-family-exo2);
-		font-size: 20px;
+		font-size: 24px;
 		line-height: 100%;
 		height: 43px;
 		display: inline-block;
@@ -748,6 +757,11 @@ audio {
 	}
 	.hero__body .body__text .hero__title  {
 		max-width: 790px;
+	}
+}
+@media (min-width:1030px) {
+	.swiper {
+		width: 1000px;
 	}
 }
 @media (max-width:959.98px) {
@@ -1073,15 +1087,15 @@ audio {
 					}
 					.space__btn {
 						a {
-							padding: 10px 12px;
-							max-width: 160px;
+							padding: 8px 12px 10px;
+							max-width: 180px;
 						}
 					}
 				}
 			}
 			.space__img {
 				margin-top: -14em;
-				margin-left: -11em;
+				margin-left: -18em;
 				position: relative;
 				z-index: 3;
 				img {
@@ -1166,12 +1180,18 @@ audio {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 	}
+	.gallery .gall-a h3 {
+		text-transform: none;
+	}
 	.medit__cart-text{
 		padding: 15px;
 	}
 	.recept__body {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
+	}
+	.meditation__body {
+		padding: 0 20px;
 	}
 	.swiper-button-next {
 		right: 10%;
@@ -1200,6 +1220,13 @@ audio {
 	}
 	.section__title-block {
 		margin-top: 20px;
+	}
+	.footer {
+		.space__body {
+			 .space__img {
+				margin-left: -13em;
+			}
+		}
 	}
 }
 @media (max-width:393.98px) {
