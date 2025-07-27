@@ -23,9 +23,9 @@
 }
 
 ._container {
-  max-width: 1340px;
+  max-width: 1360px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 29px;
 }
 
 .page {
@@ -266,7 +266,7 @@
   left: 0;
   background: url("../img/top-grad.svg") no-repeat;
   background-size: contain;
-  width: 100%;
+  width: 102%;
   height: 100%;
 }
 .recept:before {
@@ -787,6 +787,11 @@ audio {
     width: 1000px;
   }
 }
+@media (max-width: 1180.98px) {
+  .hero__body .body__image {
+    right: -8em;
+  }
+}
 @media (max-width: 959.98px) {
   .menu__icon {
     display: block;
@@ -950,7 +955,7 @@ audio {
   }
   .hero__body .body__image {
     position: absolute;
-    right: -70px;
+    right: -80px;
     top: 188px;
   }
   .recept {

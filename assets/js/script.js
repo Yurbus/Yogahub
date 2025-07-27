@@ -86,54 +86,6 @@ buttons.forEach(button => {
 });
 
 
-
-
-// const buttons = document.querySelectorAll('.listen-button');
-// const audios = document.querySelectorAll('audio');
-
-// let currentAudio = null;
-// let currentButton = null;
-
-// buttons.forEach(button => {
-//   const audioId = button.getAttribute('data-audio');
-//   const audio = document.getElementById(audioId);
-
-//   button.addEventListener('click', () => {
-//     // Останавливаем текущий трек если другой
-//     if (currentAudio && currentAudio !== audio) {
-//       currentAudio.pause();
-//       currentAudio.currentTime = 0;
-//       if (currentButton) currentButton.textContent = 'Слухати ▶ ';
-//     }
-
-//     // Переключение play/pause
-//     if (audio.paused) {
-//       audio.play();
-//       button.innerHTML = 'Пауза <img src="assets/img/pause.svg" alt="">';
-//       currentAudio = audio;
-//       currentButton = button;
-//     } else {
-//       audio.pause();
-//       // button.textContent = 'Слухати ▶';
-//       button.innerHTML = 'Слухати <img src="assets/img/video_fill.svg" alt="">';
-//       currentAudio = null;
-//       currentButton = null;
-//     }
-//   });
-
-//   // Сброс кнопки после окончания трека
-//   audio.addEventListener('ended', () => {
-//     button.textContent = 'Слухати ▶';
-//     if (currentAudio === audio) {
-//       currentAudio = null;
-//       currentButton = null;
-//     }
-//   });
-// });
-
-
-
-
 // Прокрутка при клике
 const menuLinks = document.querySelectorAll('.menu__link a[data-goto]');
 if(menuLinks.length > 0) {
@@ -243,18 +195,6 @@ window.addEventListener('scroll', function () {
     header.style.backgroundColor = 'transparent';
   }
 });
-// window.addEventListener('scroll', function () {
-//     const header = document.getElementById('header');
-//     if (window.scrollY > 50) {  
-//         header.style.top = '0px'; 
-//         header.style.backgroundColor = 'white'; 
-//     } else {
-//         header.style.top = '0px'; 
-//         header.style.backgroundColor = 'transparent'; 
-//     }
-// });
-
-
 
 
 // ------- Section about прокрутка чисел ---------------------------------------
@@ -311,8 +251,6 @@ window.addEventListener('scroll', function () {
 // } else {
 //     document.body.classList.add('_pc');
 // }
-
-
 
 
 // -------- Accordion -----------------------------------------
