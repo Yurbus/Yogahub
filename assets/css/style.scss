@@ -1,7 +1,7 @@
 
 :root {
-	--font-family-exo: "Exo", sans-serif;
-	--font-family-exo2: "Exo 2", sans-serif;
+	--font-family-exo: 'Exo', sans-serif;
+	--font-family-exo2: 'Exo 2', sans-serif;
 	--font-size: 16px;
 	--font-weight: 400;
 	--bg-page: #FFF9FA;
@@ -36,7 +36,7 @@
 }
 .title__h2 {
 	font-size: clamp(24px, 5vw, 42px);
-	font-weight: 600;
+	font-weight: 700;
 	text-transform: uppercase;
 	color: var(--rose);
 }
@@ -49,6 +49,7 @@
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 100%;
+	font-family: var(--font-family-exo);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -194,14 +195,14 @@
 	.body__text {
 		z-index: 2;
 		position: relative;
-		margin-top: 100px;
+		margin-top: 70px;
 		z-index: 3;
 		.hero__title  {
 			max-width: 720px;
 		}
 		.hero__sub-title {
 			font-size: clamp(18px, 4vw, 42px);
-			font-weight: 600;
+			font-weight: 700;
 			font-family: var(--font-family-exo2);
 			text-transform: uppercase;
 		}
@@ -286,8 +287,8 @@
 		margin: 0 auto;
 		max-width: 680px;
 		font-weight: 400;
-		font-size: clamp(16px, 4vw, 18px);
-		line-height: 100%;
+		font-size: clamp(12px, 3vw, 18px);
+		line-height: 1.1;
 		text-align: center;
 	}
 }
@@ -498,10 +499,11 @@
 	overflow: hidden;
 	padding: 20px;
 	border-radius: 30px;
+	height: 500px;
 }
 .medit__cart-img {
 	img {
-		height:204px;
+		height: 204px;
 		border-radius: 24px;
 	}
 }
@@ -519,12 +521,12 @@
 	}
 	p {
 		font-weight: 500;
-		font-size: 16px;
+		font-size: 14px;
 		min-height: 96px;
 	}
 }
 .medit__btn {
-	margin: 15px 0 30px;
+	margin: 15px 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -532,7 +534,26 @@
 		width: 110px;
 		height: 10px;
 		border-radius: 5px;
-		background: var(--main-color);
+		overflow: hidden;
+		position: relative;
+		background: #f8cce2; /* светло-розовая подложка */
+	}
+	.pink__line::after {
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 0%;
+		background: var(--main-color);/* темно-розовая линия */
+		transition: width 0.1s linear;
+		left: 0;
+		top: 0;
+	}
+	.pink__line .progress-inner {
+		height: 100%;
+		background-color: #d55d92;
+		width: 0%;
+		transition: width 0.2s linear;
+		border-radius: 10px;
 	}
 	.button__medit {
 		max-width: 130px;
@@ -660,9 +681,11 @@ audio {
 				max-width: 655px;
 				h4 {
 					font-weight: 700;
+					font-family: var(--font-family-exo2);
 					font-size: clamp(24px, 4vw, 42px);
 					line-height: 1.1;
 					text-transform: uppercase;
+					margin-bottom: 10px;
 				}
 				p {
 					font-weight: 400;
@@ -742,7 +765,7 @@ audio {
 		font-weight: 700;
 		font-family: var(--font-family-exo2);
 		font-size: 24px;
-		line-height: 100%;
+		line-height: 1.2;
 		height: 43px;
 		display: inline-block;
 	}
@@ -1087,7 +1110,7 @@ audio {
 					}
 					.space__btn {
 						a {
-							padding: 8px 12px 10px;
+							padding: 10px 12px 8px;
 							max-width: 180px;
 						}
 					}
@@ -1114,13 +1137,6 @@ audio {
 	.medit__cart {
 		grid-template-columns: 1fr;
 	}
-	.medit__cart-img {
-		img {
-			height: 250px;
-			object-position: top;
-			object-position: right;
-		}
-	}
 	.swiper-button-next {
 		right: 30%;
 	}
@@ -1137,6 +1153,21 @@ audio {
 }
 
 @media (max-width:479.98px) {
+	._container {
+		padding: 0 30px;
+	}
+	.title__h2 {
+		text-transform: none;
+	}
+	.section-padding {
+		padding: 25px 0;
+	}
+	.padding_top {
+		padding-top: 80px;
+	}
+	.stylish__text {
+		display: none;
+	}
 	.menu__icon {
         top: 8px;
     }
@@ -1171,11 +1202,17 @@ audio {
 			right: -40px;
 			top: 200px;
 		}
+		.body__text .mini-text {
+        	font-size: 7px;
+    	}
 	}
 	.recept {
         margin-top: -3em;
 		padding-top: 140px;
     }
+	.recept:before {
+		bottom: -142em;
+	}
 	.gallery {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
@@ -1192,6 +1229,10 @@ audio {
 	}
 	.meditation__body {
 		padding: 0 20px;
+	}
+	.swiper {
+		height: 631px;
+		margin-top: -50px;
 	}
 	.swiper-button-next {
 		right: 10%;

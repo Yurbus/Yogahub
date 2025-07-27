@@ -40,7 +40,7 @@
 
 .title__h2 {
   font-size: clamp(24px, 5vw, 42px);
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--rose);
 }
@@ -53,6 +53,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
+  font-family: var(--font-family-exo);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -198,7 +199,7 @@
 .hero__body .body__text {
   z-index: 2;
   position: relative;
-  margin-top: 100px;
+  margin-top: 70px;
   z-index: 3;
 }
 .hero__body .body__text .hero__title {
@@ -206,7 +207,7 @@
 }
 .hero__body .body__text .hero__sub-title {
   font-size: clamp(18px, 4vw, 42px);
-  font-weight: 600;
+  font-weight: 700;
   font-family: var(--font-family-exo2);
   text-transform: uppercase;
 }
@@ -288,8 +289,8 @@
   margin: 0 auto;
   max-width: 680px;
   font-weight: 400;
-  font-size: clamp(16px, 4vw, 18px);
-  line-height: 100%;
+  font-size: clamp(12px, 3vw, 18px);
+  line-height: 1.1;
   text-align: center;
 }
 
@@ -512,6 +513,7 @@
   overflow: hidden;
   padding: 20px;
   border-radius: 30px;
+  height: 500px;
 }
 
 .medit__cart-img img {
@@ -534,12 +536,12 @@
 }
 .medit__cart-text p {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   min-height: 96px;
 }
 
 .medit__btn {
-  margin: 15px 0 30px;
+  margin: 15px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -548,7 +550,26 @@
   width: 110px;
   height: 10px;
   border-radius: 5px;
-  background: var(--main-color);
+  overflow: hidden;
+  position: relative;
+  background: #f8cce2; /* светло-розовая подложка */
+}
+.medit__btn .pink__line::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  background: var(--main-color); /* темно-розовая линия */
+  transition: width 0.1s linear;
+  left: 0;
+  top: 0;
+}
+.medit__btn .pink__line .progress-inner {
+  height: 100%;
+  background-color: #d55d92;
+  width: 0%;
+  transition: width 0.2s linear;
+  border-radius: 10px;
 }
 .medit__btn .button__medit {
   max-width: 130px;
@@ -664,9 +685,11 @@ audio {
 }
 .footer .space__body .space__text .text-bg__wrap h4 {
   font-weight: 700;
+  font-family: var(--font-family-exo2);
   font-size: clamp(24px, 4vw, 42px);
   line-height: 1.1;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .footer .space__body .space__text .text-bg__wrap p {
   font-weight: 400;
@@ -736,7 +759,7 @@ audio {
   font-weight: 700;
   font-family: var(--font-family-exo2);
   font-size: 24px;
-  line-height: 100%;
+  line-height: 1.2;
   height: 43px;
   display: inline-block;
 }
@@ -1047,7 +1070,7 @@ audio {
     font-size: 12px;
   }
   .footer .space__body .space__text .text-bg__wrap .space__btn a {
-    padding: 8px 12px 10px;
+    padding: 10px 12px 8px;
     max-width: 180px;
   }
   .footer .space__body .space__img {
@@ -1067,13 +1090,6 @@ audio {
   .medit__cart {
     grid-template-columns: 1fr;
   }
-  .medit__cart-img img {
-    height: 250px;
-    -o-object-position: top;
-       object-position: top;
-    -o-object-position: right;
-       object-position: right;
-  }
   .swiper-button-next {
     right: 30%;
   }
@@ -1085,6 +1101,21 @@ audio {
   }
 }
 @media (max-width: 479.98px) {
+  ._container {
+    padding: 0 30px;
+  }
+  .title__h2 {
+    text-transform: none;
+  }
+  .section-padding {
+    padding: 25px 0;
+  }
+  .padding_top {
+    padding-top: 80px;
+  }
+  .stylish__text {
+    display: none;
+  }
   .menu__icon {
     top: 8px;
   }
@@ -1112,9 +1143,15 @@ audio {
     right: -40px;
     top: 200px;
   }
+  .hero__body .body__text .mini-text {
+    font-size: 7px;
+  }
   .recept {
     margin-top: -3em;
     padding-top: 140px;
+  }
+  .recept:before {
+    bottom: -142em;
   }
   .gallery {
     display: grid;
@@ -1132,6 +1169,10 @@ audio {
   }
   .meditation__body {
     padding: 0 20px;
+  }
+  .swiper {
+    height: 631px;
+    margin-top: -50px;
   }
   .swiper-button-next {
     right: 10%;

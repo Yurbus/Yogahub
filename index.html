@@ -8,10 +8,7 @@
     <title>YogaHub</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
     <link href="https://fonts.googleapis.com/css?family=Exo+2:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Exo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <!-- Link Swiper's CSS -->
@@ -242,7 +239,7 @@
                                             </p>
                                         </div>
                                         <div class="medit__btn">
-                                            <div class="pink__line"></div>
+                                            <div class="pink__line" id="progressBar"><div class="progress-inner"></div></div>
                                             <button id="playButton" data-audio="track1" class="listen-button button__medit border-button__style">
                                                 Слухати 
                                                 <img src="assets/img/video_fill.svg" alt="">
@@ -267,7 +264,33 @@
                                             </p>
                                         </div>
                                         <div class="medit__btn">
-                                            <div class="pink__line"></div>
+                                            <div class="pink__line" id="progressBar"><div class="progress-inner"></div></div>
+                                            <button id="playButton" data-audio="track1" class="listen-button button__medit border-button__style">
+                                                Слухати 
+                                                <img src="assets/img/video_fill.svg" alt="">
+                                            </button>
+
+                                            <audio id="track1" controls>
+                                                <source src="assets/Meditation-1-Yoga-hub.mp3" controls  type="audio/mpeg">
+                                            </audio>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="medit__cart">
+                                        <div class="medit__cart-img">
+                                            <img src="assets/img/med-1.png" alt="">
+                                        </div>
+                                        <div class="medit__cart-text">
+                                            <h3>Медитації для душі</h3>
+                                            <p>
+                                                Кожна аудіомедитація створена, щоб подарувати спокій, сфокусуватись на 
+                                                собі й перезавантажити тіло та думки.
+                                                Слухай вранці, ввечері або тоді, коли відчуваєш — час обрати себе.
+                                            </p>
+                                        </div>
+                                        <div class="medit__btn">
+                                            <div class="pink__line" id="progressBar"><div class="progress-inner"></div></div>
                                             <button id="playButton" data-audio="track1" class="listen-button button__medit border-button__style">
                                                 Слухати 
                                                 <img src="assets/img/video_fill.svg" alt="">
@@ -305,88 +328,6 @@
                                         </div> 
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="medit__cart">
-                                        <div class="medit__cart-img">
-                                            <img src="assets/img/med-1.png" alt="">
-                                        </div>
-                                        <div class="medit__cart-text">
-                                            <h3>Медитації для душі</h3>
-                                            <p>
-                                                Кожна аудіомедитація створена, щоб подарувати спокій, сфокусуватись на 
-                                                собі й перезавантажити тіло та думки.
-                                                Слухай вранці, ввечері або тоді, коли відчуваєш — час обрати себе.
-                                            </p>
-                                        </div>
-                                        <div class="medit__btn">
-                                            <div class="pink__line"></div>
-                                            <button id="playButton" data-audio="track1" class="listen-button button__medit border-button__style">
-                                                Слухати 
-                                                <img src="assets/img/video_fill.svg" alt="">
-                                            </button>
-
-                                            <audio id="track1" controls>
-                                                <source src="assets/Meditation-1-Yoga-hub.mp3" controls  type="audio/mpeg">
-                                            </audio>
-                                        </div> 
-                                    </div>
-                                </div>
-
-                                <!-- <div class="swiper-slide">
-                                    <div class="medit__cart">
-                                        <div class="medit__cart-img">
-                                            <img src="assets/img/med-2.png" alt="">
-                                        </div>
-                                        <div class="medit__cart-text">
-                                            <div class="wrapp__cart-text">
-                                                <h3>Медитація вдячності</h3>
-                                                <p>
-                                                    Знайдіть внутрішній спокій і навчіться цінувати кожен момент. 
-                                                    Ця практика відкриває щастя в простому та наповнює серце теплом.
-                                                </p>
-                                            </div>
-                
-                                            <div class="medit__btn">
-                                                <button id="playButton" data-audio="track2" class="listen-button button__medit border-button__style">
-                                                    Слухати 
-                                                    <img src="assets/img/video_fill.svg" alt="">
-                                                </button>
-
-                                                <audio id="track2" controls>
-                                                    <source src="assets/Dancing-With-An-Angel.mp3" controls  type="audio/mpeg">
-                                                </audio>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="medit__cart">
-                                        <div class="medit__cart-img">
-                                            <img src="assets/img/med-1.png" alt="">
-                                        </div>
-                                        <div class="medit__cart-text">
-                                            <div class="wrapp__cart-text">
-                                                <h3>Медитація на досягнення цілей</h3>
-                                                <p>
-                                                    Налаштуйтесь на успіх і візуалізуйте свої мрії. Ця медитація допоможе 
-                                                    знайти внутрішню опору та рухатись до цілей з впевненістю.
-                                                </p>
-                                            </div>
-                
-                                            <div class="medit__btn">
-                                                <button id="playButton" data-audio="track3" class="listen-button button__medit border-button__style">
-                                                    Слухати 
-                                                    <img src="assets/img/video_fill.svg" alt="">
-                                                </button>
-
-                                                <audio id="track3" controls>
-                                                    <source src="assets/Dancing-With-An-Angel.mp3" controls  type="audio/mpeg">
-                                                </audio>
-                                            </div> 
-                                        </div>
-                                    </div>
-                                </div> -->
                             </div>
                             <div class="swiper-button-next"></div>
                             <div class="swiper-button-prev"></div>

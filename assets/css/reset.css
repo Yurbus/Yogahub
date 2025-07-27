@@ -1,4 +1,20 @@
 @charset "UTF-8";
+:root {
+  --font-family-exo: "Exo", sans-serif;
+  --font-family-exo2: "Exo 2", sans-serif;
+  --font-size: 16px;
+  --font-weight: 400;
+  --bg-page: #FFF9FA;
+  --bg-cards: #FFEAE8;
+  --rose: #CE4370;
+  --main-color: #E883A3;
+  --main-color-hover: #dd7c8f;
+  --main-color-opacity: #FFDEDE;
+  --text-color: #A16D6D;
+  --dark-color: rgba(0, 0, 0, 0.74);
+  --footer-text-color: #a16d6d;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -186,8 +202,9 @@ body._lock {
     flex-direction: column-reverse;
   }
   .popup__content .popup__img img {
-    height: 300px;
+    height: 200px;
     max-width: 100%;
+    margin-bottom: -5px;
   }
   .popup__content .wrap__content {
     padding: 24px 16px;

@@ -26,7 +26,7 @@ const isMobile = {
     }
 };
 
-
+// Воспроизвести аудио
 const buttons = document.querySelectorAll('.listen-button');
 const audios = document.querySelectorAll('audio');
 
@@ -36,16 +36,22 @@ let currentButton = null;
 buttons.forEach(button => {
   const audioId = button.getAttribute('data-audio');
   const audio = document.getElementById(audioId);
+  const progressBar = button.closest('.medit__btn').querySelector('.progress-inner');
 
   button.addEventListener('click', () => {
-    // Останавливаем текущий трек если другой
+    // Остановить текущий трек, если другой
     if (currentAudio && currentAudio !== audio) {
       currentAudio.pause();
       currentAudio.currentTime = 0;
-      if (currentButton) currentButton.textContent = 'Слухати ▶ ';
+
+      if (currentButton) {
+        currentButton.innerHTML = 'Слухати <img src="assets/img/video_fill.svg" alt="">';
+        const prevProgress = currentButton.closest('.medit__btn').querySelector('.progress-inner');
+        if (prevProgress) prevProgress.style.width = '0%';
+      }
     }
 
-    // Переключение play/pause
+    // Переключение Play / Pause
     if (audio.paused) {
       audio.play();
       button.innerHTML = 'Пауза <img src="assets/img/pause.svg" alt="">';
@@ -53,22 +59,79 @@ buttons.forEach(button => {
       currentButton = button;
     } else {
       audio.pause();
-      // button.textContent = 'Слухати ▶';
       button.innerHTML = 'Слухати <img src="assets/img/video_fill.svg" alt="">';
       currentAudio = null;
       currentButton = null;
     }
   });
 
-  // Сброс кнопки после окончания трека
+  // Обновляем полосу прогресса
+  audio.addEventListener('timeupdate', () => {
+    const progress = (audio.currentTime / audio.duration) * 100;
+    if (progressBar) {
+      progressBar.style.width = progress + '%';
+    }
+  });
+
+  // Сброс по окончанию
   audio.addEventListener('ended', () => {
-    button.textContent = 'Слухати ▶';
+    button.innerHTML = 'Слухати <img src="assets/img/video_fill.svg" alt="">';
+    if (progressBar) progressBar.style.width = '0%';
+
     if (currentAudio === audio) {
       currentAudio = null;
       currentButton = null;
     }
   });
 });
+
+
+
+
+// const buttons = document.querySelectorAll('.listen-button');
+// const audios = document.querySelectorAll('audio');
+
+// let currentAudio = null;
+// let currentButton = null;
+
+// buttons.forEach(button => {
+//   const audioId = button.getAttribute('data-audio');
+//   const audio = document.getElementById(audioId);
+
+//   button.addEventListener('click', () => {
+//     // Останавливаем текущий трек если другой
+//     if (currentAudio && currentAudio !== audio) {
+//       currentAudio.pause();
+//       currentAudio.currentTime = 0;
+//       if (currentButton) currentButton.textContent = 'Слухати ▶ ';
+//     }
+
+//     // Переключение play/pause
+//     if (audio.paused) {
+//       audio.play();
+//       button.innerHTML = 'Пауза <img src="assets/img/pause.svg" alt="">';
+//       currentAudio = audio;
+//       currentButton = button;
+//     } else {
+//       audio.pause();
+//       // button.textContent = 'Слухати ▶';
+//       button.innerHTML = 'Слухати <img src="assets/img/video_fill.svg" alt="">';
+//       currentAudio = null;
+//       currentButton = null;
+//     }
+//   });
+
+//   // Сброс кнопки после окончания трека
+//   audio.addEventListener('ended', () => {
+//     button.textContent = 'Слухати ▶';
+//     if (currentAudio === audio) {
+//       currentAudio = null;
+//       currentButton = null;
+//     }
+//   });
+// });
+
+
 
 
 // Прокрутка при клике
@@ -141,6 +204,49 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
+// Меню бурнер
+const iconMenu = document.querySelector('.menu__icon');
+const menuBody = document.querySelector('.header__right');
+if (iconMenu) {
+	iconMenu.addEventListener("click", function (e) {
+		document.body.classList.toggle('_lock');
+		iconMenu.classList.toggle('_active');
+		menuBody.classList.toggle('_active');
+	});
+}
+
+const headerRight = document.querySelector('.header__right');
+
+const observer = new MutationObserver(() => {
+  if (headerRight.classList.contains('_active')) {
+    header.classList.add('dark-overlay');
+  } else {
+    header.classList.remove('dark-overlay');
+  }
+});
+
+observer.observe(headerRight, {
+  attributes: true,
+  attributeFilter: ['class']
+});
+
+// --------- header------------------------------------------------
+window.addEventListener('scroll', function () {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {  
+        header.style.top = '0px'; 
+        header.style.backgroundColor = 'white'; 
+    } else {
+        header.style.top = '30px'; 
+        header.style.backgroundColor = 'transparent'; 
+    }
+});
+
+
+
+
 // ------- Section about прокрутка чисел ---------------------------------------
 // document.addEventListener('DOMContentLoaded', () => {
 //     const statsBlock = document.getElementById('stats');
@@ -197,31 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // }
 
 
-// Меню бурнер
-const iconMenu = document.querySelector('.menu__icon');
-const menuBody = document.querySelector('.header__right');
-if (iconMenu) {
-	iconMenu.addEventListener("click", function (e) {
-		document.body.classList.toggle('_lock');
-		iconMenu.classList.toggle('_active');
-		menuBody.classList.toggle('_active');
-	});
-}
 
-const headerRight = document.querySelector('.header__right');
-
-const observer = new MutationObserver(() => {
-  if (headerRight.classList.contains('_active')) {
-    header.classList.add('dark-overlay');
-  } else {
-    header.classList.remove('dark-overlay');
-  }
-});
-
-observer.observe(headerRight, {
-  attributes: true,
-  attributeFilter: ['class']
-});
 
 // -------- Accordion -----------------------------------------
 // var acc = document.getElementsByClassName("accordion");
@@ -239,19 +321,6 @@ observer.observe(headerRight, {
 //     });
 // }
 
-
-// --------- header------------------------------------------------
-
-window.addEventListener('scroll', function () {
-    const header = document.getElementById('header');
-    if (window.scrollY > 50) {  
-        header.style.top = '0px'; 
-        header.style.backgroundColor = 'white'; 
-    } else {
-        header.style.top = '0px'; 
-        header.style.backgroundColor = 'transparent'; 
-    }
-});
 
 
 
