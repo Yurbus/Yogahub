@@ -550,7 +550,7 @@
   justify-content: space-between;
 }
 .medit__btn .pink__line {
-  width: 110px;
+  width: 100px;
   height: 10px;
   border-radius: 5px;
   overflow: hidden;
@@ -1105,7 +1105,7 @@ audio {
 }
 @media (max-width: 479.98px) {
   ._container {
-    padding: 0 30px;
+    padding: 0 29px;
   }
   .title__h2 {
     text-transform: none;
