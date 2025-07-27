@@ -970,6 +970,9 @@ audio {
   .swiper-button-prev {
     left: 35%;
   }
+  .training__body .item__tr-video iframe {
+    height: 270px;
+  }
   .footer .space__body {
     position: relative;
   }
@@ -1053,6 +1056,9 @@ audio {
   }
   .training__body .item__tr-text .training_btn {
     max-width: 187px;
+  }
+  .training__body .item__tr-video iframe {
+    min-height: 100%;
   }
   .footer .footer__body .footer-body_container {
     flex-direction: column;

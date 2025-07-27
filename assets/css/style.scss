@@ -987,6 +987,9 @@ audio {
 	.swiper-button-prev {
 		left: 35%;
 	}
+	.training__body .item__tr-video iframe {
+		height: 270px;
+	}
 	.footer {
 		.space__body {
 			position: relative;
@@ -1084,6 +1087,9 @@ audio {
 			.training_btn {
 				max-width: 187px;
 			}
+		}
+		.item__tr-video iframe {
+			min-height: 100%;
 		}
 	}
 
