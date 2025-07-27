@@ -162,7 +162,7 @@
 .header__button .present-btn {
   display: flex;
   align-items: center;
-  font-size: clamp(10px, 2vw, 20px);
+  font-size: clamp(8px, 2vw, 20px);
   color: var(--main-color);
 }
 .header__button .present-btn img {
@@ -679,7 +679,7 @@ audio {
 }
 .footer .space__body .space__text .text-bg__wrap {
   border-radius: 30px;
-  padding: 15px 20px;
+  padding: 15px;
   background: #fef1f7;
   max-width: 655px;
 }
@@ -1199,7 +1199,7 @@ audio {
     margin-top: 20px;
   }
   .footer .space__body .space__img {
-    margin-left: -13em;
+    margin-left: -12em;
   }
 }
 @media (max-width: 393.98px) {
