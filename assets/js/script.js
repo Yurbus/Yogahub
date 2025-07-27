@@ -235,11 +235,11 @@ observer.observe(headerRight, {
 // --------- header------------------------------------------------
 window.addEventListener('scroll', function () {
   const header = document.getElementById('header');
-  if (window.scrollY > 50) {
+  if (window.scrollY > 80) {
     header.style.top = '0px';
-    header.style.backgroundColor = 'white';
+    header.style.backgroundColor = '#FFF9FA';
   } else {
-    header.style.top = '30px';
+    header.style.top = '0';
     header.style.backgroundColor = 'transparent';
   }
 });

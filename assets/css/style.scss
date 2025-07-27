@@ -92,7 +92,7 @@
     padding: 20px 0;
     z-index: 4;
     position: fixed;
-    top: 30px;
+    top: 0;
 	left: 0;
 	width: 100%;
 	transition: top 0.3s ease, background-color 0.3s ease;
@@ -967,13 +967,13 @@ audio {
 			top: 188px;
 		}
 	}
-
+	
 	.recept {
 		margin-top: 0em;
 	}
-
-
-
+	.recept__body {
+		grid-template-columns: repeat(3, 1fr);
+	}
 	.swiper-button-next {
 		right: 35%;
 	}
@@ -1137,6 +1137,9 @@ audio {
 }
 
 @media (max-width:639.98px) {
+	.header {
+		top: 30px;
+	}
 	.recept {
 		padding-top: 200px;
 	}
@@ -1213,6 +1216,7 @@ audio {
 		.body__image {
 			right: -70px;
 			top: 200px;
+			z-index: 3;
 		}
 		.body__text .mini-text {
         	font-size: 7px;
