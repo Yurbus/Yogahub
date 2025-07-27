@@ -1267,7 +1267,11 @@ audio {
 			 .space__img {
 				margin-left: -12em;
 			}
+			.space__text .text-bg__wrap .space__btn a {
+				max-width: 100%;
+			}
 		}
+		
 	}
 }
 @media (max-width:393.98px) {
