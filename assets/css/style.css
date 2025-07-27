@@ -337,7 +337,10 @@
 }
 .recept__cart .wrapp__cart p {
   padding: 0 18px;
-  min-height: 120px;
+  min-height: 80px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: clamp(14px, 3vw, 16px);
 }
 .recept__cart .cart__btn {
   position: absolute;
@@ -1101,6 +1104,9 @@ audio {
   }
   .training__body .item__tr-video iframe {
     height: 300px;
+  }
+  .footer .footer__body {
+    margin-top: -90px;
   }
 }
 @media (max-width: 479.98px) {

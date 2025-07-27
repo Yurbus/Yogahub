@@ -332,7 +332,10 @@
 		}
 		p {
 			padding: 0 18px;
-			min-height: 120px;
+			min-height: 80px;
+			font-weight: 500;
+			line-height: 1.2;
+			font-size: clamp(14px, 3vw, 16px);
 		}
 	}
 	.cart__btn {
@@ -1152,6 +1155,9 @@ audio {
 				height: 300px;
 			}
 		}
+	}
+	.footer .footer__body {
+		margin-top: -90px;
 	}
 }
 
