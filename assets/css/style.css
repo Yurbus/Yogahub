@@ -689,7 +689,7 @@ audio {
 .footer .space__body .space__text .text-bg__wrap h4 {
   font-weight: 700;
   font-family: var(--font-family-exo2);
-  font-size: clamp(24px, 4vw, 42px);
+  font-size: clamp(23px, 4vw, 42px);
   line-height: 1.1;
   text-transform: uppercase;
   margin-bottom: 10px;
