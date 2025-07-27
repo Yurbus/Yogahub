@@ -92,7 +92,10 @@
     padding: 20px 0;
     z-index: 4;
     position: fixed;
-    width: 100%;
+    top: 30px;
+	left: 0;
+	width: 100%;
+	transition: top 0.3s ease, background-color 0.3s ease;
 }
 .header__body {
     display: flex;
@@ -1163,6 +1166,9 @@ audio {
 		padding: 25px 0;
 	}
 	.padding_top {
+		padding-top: 80px;
+	}
+	.padding_stylish {
 		padding-top: 80px;
 	}
 	.stylish__text {
