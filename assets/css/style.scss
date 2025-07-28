@@ -1330,4 +1330,11 @@ audio {
 			height: 220px;
 		}
 	}
+	.training__body {
+		.item__tr-video {
+			iframe {
+				height: 170px;
+			}
+		}
+	}
 }

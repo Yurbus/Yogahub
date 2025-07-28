@@ -1258,4 +1258,7 @@ audio {
   .swiper2 .swiper-slide iframe {
     height: 220px;
   }
+  .training__body .item__tr-video iframe {
+    height: 170px;
+  }
 }/*# sourceMappingURL=style.css.map */
