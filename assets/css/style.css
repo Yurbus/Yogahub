@@ -1031,7 +1031,7 @@ audio {
     max-width: 187px;
   }
   .training__body .item__tr-video iframe {
-    min-height: 375px;
+    height: 375px;
   }
 }
 @media (max-width: 768.98px) {
