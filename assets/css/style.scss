@@ -121,7 +121,6 @@
 		align-items: center;
 		flex-wrap: wrap;
 		overflow: hidden;
-		margin-right: 30px;
 	}
 	.menu__link {
 		margin: 0;
@@ -154,7 +153,7 @@
 	.present-btn {
 		display: flex;
 		align-items: center;
-		font-size: clamp(8px, 2vw, 20px);
+		font-size: clamp(8px, 1.5vw, 20px);
 		color: var(--main-color);
 		img {
 			width: 20px;
@@ -595,7 +594,7 @@ audio {
 }
 
 .training__body {
-	margin-top: 44px;
+	margin: 44px 15px 0;
 	position: relative;
 	z-index: 2;
 	.training__item {
@@ -802,10 +801,19 @@ audio {
 	}
 }
 @media (max-width:1180.98px) {
+	.header__logo {
+		max-width: 150px;
+	}
+	.header__menu .menu__link a {
+		padding: 10px;
+	}
 	.hero__body {
 		.body__image {
 			right: -8em;
 		}
+	}
+	.training__body .item__tr-video iframe {
+		height: 340px;
 	}
 }
 @media (max-width:959.98px) {
@@ -1025,7 +1033,36 @@ audio {
 		}
 	}
 }
-@media (max-width:767.98px) {
+@media (max-width:820.98px) {
+		.training__body {
+		.training__item {
+			grid-template-columns: 1fr;
+			gap: 10px;
+			margin-bottom: 40px;
+			.item__tr-video{
+				order: 1;
+				.time__play {
+					.play-line {
+						width: 85%;
+						height: 6px;
+					}
+				}
+			}
+			.item__tr-text{
+				order: 2;
+			}
+		}
+		.item__tr-text {
+			.training_btn {
+				max-width: 187px;
+			}
+		}
+		.item__tr-video iframe {
+			min-height: 375px;
+		}
+	}
+}
+@media (max-width:768.98px) {
 	.button__style {
 		width: 100%;
 		padding: 21px;
@@ -1086,33 +1123,33 @@ audio {
 			width: 0;
 		}
 	}
-	.training__body {
-		.training__item {
-			grid-template-columns: 1fr;
-			gap: 10px;
-			margin-bottom: 40px;
-			.item__tr-video{
-				order: 1;
-				.time__play {
-					.play-line {
-						width: 85%;
-						height: 6px;
-					}
-				}
-			}
-			.item__tr-text{
-				order: 2;
-			}
-		}
-		.item__tr-text {
-			.training_btn {
-				max-width: 187px;
-			}
-		}
-		.item__tr-video iframe {
-			min-height: 100%;
-		}
-	}
+	// .training__body {
+	// 	.training__item {
+	// 		grid-template-columns: 1fr;
+	// 		gap: 10px;
+	// 		margin-bottom: 40px;
+	// 		.item__tr-video{
+	// 			order: 1;
+	// 			.time__play {
+	// 				.play-line {
+	// 					width: 85%;
+	// 					height: 6px;
+	// 				}
+	// 			}
+	// 		}
+	// 		.item__tr-text{
+	// 			order: 2;
+	// 		}
+	// 	}
+	// 	.item__tr-text {
+	// 		.training_btn {
+	// 			max-width: 187px;
+	// 		}
+	// 	}
+	// 	.item__tr-video iframe {
+	// 		min-height: 375px;
+	// 	}
+	// }
 
 	.footer {
 		.footer__body {

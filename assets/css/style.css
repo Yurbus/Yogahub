@@ -132,7 +132,6 @@
   align-items: center;
   flex-wrap: wrap;
   overflow: hidden;
-  margin-right: 30px;
 }
 .header__menu .menu__link {
   margin: 0;
@@ -165,7 +164,7 @@
 .header__button .present-btn {
   display: flex;
   align-items: center;
-  font-size: clamp(8px, 2vw, 20px);
+  font-size: clamp(8px, 1.5vw, 20px);
   color: var(--main-color);
 }
 .header__button .present-btn img {
@@ -612,7 +611,7 @@ audio {
 }
 
 .training__body {
-  margin-top: 44px;
+  margin: 44px 15px 0;
   position: relative;
   z-index: 2;
 }
@@ -795,8 +794,17 @@ audio {
   }
 }
 @media (max-width: 1180.98px) {
+  .header__logo {
+    max-width: 150px;
+  }
+  .header__menu .menu__link a {
+    padding: 10px;
+  }
   .hero__body .body__image {
     right: -8em;
+  }
+  .training__body .item__tr-video iframe {
+    height: 340px;
   }
 }
 @media (max-width: 959.98px) {
@@ -1003,7 +1011,30 @@ audio {
     padding-left: 0;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 820.98px) {
+  .training__body .training__item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  .training__body .training__item .item__tr-video {
+    order: 1;
+  }
+  .training__body .training__item .item__tr-video .time__play .play-line {
+    width: 85%;
+    height: 6px;
+  }
+  .training__body .training__item .item__tr-text {
+    order: 2;
+  }
+  .training__body .item__tr-text .training_btn {
+    max-width: 187px;
+  }
+  .training__body .item__tr-video iframe {
+    min-height: 375px;
+  }
+}
+@media (max-width: 768.98px) {
   .button__style {
     width: 100%;
     padding: 21px;
@@ -1048,27 +1079,6 @@ audio {
   }
   .training:before {
     width: 0;
-  }
-  .training__body .training__item {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    margin-bottom: 40px;
-  }
-  .training__body .training__item .item__tr-video {
-    order: 1;
-  }
-  .training__body .training__item .item__tr-video .time__play .play-line {
-    width: 85%;
-    height: 6px;
-  }
-  .training__body .training__item .item__tr-text {
-    order: 2;
-  }
-  .training__body .item__tr-text .training_btn {
-    max-width: 187px;
-  }
-  .training__body .item__tr-video iframe {
-    min-height: 100%;
   }
   .footer .footer__body .footer-body_container {
     flex-direction: column;
