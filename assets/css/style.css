@@ -541,9 +541,10 @@
 }
 .medit__cart-text h3 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 100%;
   margin-bottom: 12px;
+  text-transform: uppercase;
 }
 .medit__cart-text p {
   font-weight: 500;
@@ -1134,10 +1135,10 @@ audio {
     grid-template-columns: 1fr;
   }
   .swiper-button-next {
-    right: 30%;
+    right: 20%;
   }
   .swiper-button-prev {
-    left: 30%;
+    left: 20%;
   }
   .training__body .item__tr-video iframe {
     height: 300px;
@@ -1222,10 +1223,10 @@ audio {
     margin-top: -50px;
   }
   .swiper-button-next {
-    right: 10%;
+    right: 6%;
   }
   .swiper-button-prev {
-    left: 10%;
+    left: 6%;
   }
   .swiper2 {
     height: 370px;
