@@ -287,12 +287,17 @@
 	margin-top: 50px;
 	z-index: 2;
 	.block__sub-text {
-		margin: 0 auto;
+		margin: 3px auto 0;
 		max-width: 680px;
 		font-weight: 400;
 		font-size: clamp(12px, 3vw, 18px);
 		line-height: 1.1;
 		text-align: center;
+	}
+}
+.stylish__title-block {
+	.block__sub-text {
+		max-width: 1200px;
 	}
 }
 .recept__body {
@@ -333,7 +338,7 @@
 		p {
 			padding: 0 18px;
 			min-height: 80px;
-			font-weight: 500;
+			font-weight: 400;
 			line-height: 1.2;
 			font-size: clamp(14px, 3vw, 16px);
 		}
@@ -383,7 +388,7 @@
 		}
 		p {
 			padding: 0 18px;
-			font-size: clamp(14px, 4vw, 20px);
+			font-size: clamp(14px, 3vw, 20px);
 			font-weight: 500;
 			margin-bottom: 12px;
 		}
@@ -401,6 +406,8 @@
 			}
 			a {
 				color: var(--main-color);
+				font-size: 20px;
+				font-weight: 400;
 				img {
 				width: 25px;
 				padding-top: 4px;
@@ -520,7 +527,7 @@
 	justify-content: space-between;
 	color: var(--rose);
 	h3 {
-		font-weight: 600;
+		font-weight: 700;
 		font-size: 24px;
 		line-height: 100%;
 		margin-bottom: 12px;
@@ -623,13 +630,14 @@ audio {
 	}
 	.item__tr-text {
 		.item__tr-title {
-			font-size: clamp(24px, 4vw, 42px);
+			font-size: clamp(18px, 4vw, 42px);
 			font-weight: 700;
 			color: var(--rose);
-			margin-bottom: 12px;
+			margin-bottom: 10px;
 		}
 		.item__tr-descr {
-			font-size: clamp(16px, 4vw, 20px);
+			font-size: clamp(12px, 3vw, 20px);
+			font-weight: 400;
 			line-height: 130%;
 			color: var(--rose);
 		}
@@ -962,7 +970,7 @@ audio {
 	}
 	.hero__body {
 		.body__text {
-			max-width: 550px;
+			max-width: 445px;
 			.mini-text {
 				font-size: 14px;
 				color: var(--main-color);
@@ -977,6 +985,9 @@ audio {
 	
 	.recept {
 		margin-top: 0em;
+	}
+	.recept:before {
+		bottom: -83em;
 	}
 	.recept__body {
 		grid-template-columns: repeat(3, 1fr);
@@ -1178,9 +1189,6 @@ audio {
 }
 
 @media (max-width:479.98px) {
-	._container {
-		padding: 0 29px;
-	}
 	.title__h2 {
 		text-transform: none;
 	}
@@ -1228,7 +1236,7 @@ audio {
 		}
 		.body__image {
 			right: -70px;
-			top: 200px;
+			top: 180px;
 			z-index: 3;
 		}
 		.body__text .mini-text {
@@ -1281,13 +1289,23 @@ audio {
 	.swiper2 .swiper-pagination-fraction {
 		bottom: 5px;
 	}
+	.training {
+        padding: 25px 10px;
+    }
 	.training__body {
 		.item__tr-video {
 			iframe {
-				height: 220px;
+				height: 190px;
+			}
+		}
+		.item__tr-text {
+			.training_btn {
+				max-width: 140px;
+				padding: 13px;
 			}
 		}
 	}
+	
 	.section__title-block {
 		margin-top: 20px;
 	}

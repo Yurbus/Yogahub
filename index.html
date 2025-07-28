@@ -32,8 +32,8 @@
                     <div class="header__right">
                         <div class="header__menu">
                             <ul class="menu__list">
-                                <li class="menu__link"><a href="breakfast.html">Рецепти</a></li>
-                                <li class="menu__link"><a href="stylish.html">Образи</a></li> 
+                                <li class="menu__link"><a href="breakfast.html" data-goto=".recept">Рецепти</a></li>
+                                <li class="menu__link"><a href="stylish.html" data-goto=".stylish">Образи</a></li> 
                                 <li class="menu__link"><a href="#" data-goto=".meditation">Медетації</a></li>
                                 <li class="menu__link"><a href="#" data-goto=".training">Тренування</a></li>
                                 <li class="menu__link"><a href="#" data-goto=".footer">Про простір </a></li>
@@ -85,7 +85,7 @@
                 <!-- <div class="_ibg"><img src="assets/img/main-bg.svg" alt=""></div> -->
             </section>
 
-            <section class="recept section-padding">
+            <section id="recept" class="recept section-padding">
                 <div class="_container">
                     <div class="section__title-block recept__title-block">
                         <h2 class="title__h2 white-text">Рецепти для здорового тіла</h2>
@@ -163,11 +163,15 @@
                 </div>
             </section>
 
-            <section class="stylish section-padding">
+            <section id="stylish" class="stylish section-padding">
                 <div class="_container">
                     <div class="section__title-block stylish__title-block">
                         <h2 class="title__h2">Стильні образи з YogaHub</h2>
-                        <p class="block__sub-text text-rose">Галерея готових образів з нашими костюмами для повсякденного життя: для міста, дому, тренувань і подорожей. </p>
+                        <p class="block__sub-text text-rose">
+                            Легкість, стиль і гармонія — кожного дня<br>
+                            Ми зібрали готові образи з костюмами YogaHub — для дому, прогулянок, подорожей чи відпочинку.<br>
+                            Щоб ти почувалася впевнено та виглядала стильно без зайвих зусиль.
+                        </p>
                     </div>
                     <div class="stylish__body">
                         <div class="gallery">
