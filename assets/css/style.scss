@@ -1215,6 +1215,12 @@ audio {
 	.recept {
 		padding-top: 200px;
 	}
+	.meditation {
+		position: relative;
+		background: url('../img/meditation_bg-mob.svg') top no-repeat;
+		background-size: cover;
+		width: 100%;
+	}
 	.medit__cart {
 		grid-template-columns: 1fr;
 	}
