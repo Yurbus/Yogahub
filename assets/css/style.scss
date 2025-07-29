@@ -254,7 +254,7 @@
 	position: relative;
 	background: #FFF9FA;
 	background: linear-gradient(0deg,rgba(255, 249, 250, 1) 0%, rgba(232, 131, 163, 1) 100%);
-	padding-top: 280px;
+	padding-top: 355px;
 	padding-bottom: 100px;
 	margin-top: -14em;
 	&:after {
@@ -814,7 +814,7 @@ audio {
 		}
 	}
 	.training__body .item__tr-video iframe {
-		height: 340px;
+		height: 300px;
 	}
 }
 @media (max-width:959.98px) {
@@ -1035,6 +1035,9 @@ audio {
 	}
 }
 @media (max-width:820.98px) {
+	.recept {
+		padding-top: 230px;
+	}
 		.training__body {
 		.training__item {
 			grid-template-columns: 1fr;
