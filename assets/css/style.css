@@ -1272,6 +1272,9 @@ audio {
   }
 }
 @media (max-width: 393.98px) {
+  .recept__title-block .title__h2 {
+    font-size: 23px;
+  }
   .swiper2 {
     height: 360px;
   }
