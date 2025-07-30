@@ -39,7 +39,7 @@
 }
 
 .title__h2 {
-  font-size: clamp(24px, 5vw, 42px);
+  font-size: clamp(20px, 5vw, 42px);
   font-weight: 700;
   text-transform: uppercase;
   color: var(--rose);
@@ -206,12 +206,14 @@
 }
 .hero__body .body__text .hero__title {
   max-width: 720px;
+  margin-bottom: 10px;
 }
 .hero__body .body__text .hero__sub-title {
   font-size: clamp(18px, 4vw, 42px);
   font-weight: 700;
   font-family: var(--font-family-exo2);
   text-transform: uppercase;
+  margin-bottom: 6px;
 }
 .hero__body .body__text .hero__text {
   display: inline-flex;
@@ -220,7 +222,7 @@
   font-family: var(--font-family-exo2);
   line-height: 120%;
   margin: 15px 0;
-  max-width: 560px;
+  max-width: 612px;
   background: #FEF1F7;
   border-radius: 30px;
   padding: 10px 20px;
@@ -242,8 +244,9 @@
 }
 .hero__body .body__image {
   position: absolute;
-  right: 0;
+  right: 6rem;
   top: 0;
+  z-index: 3;
 }
 /*================ recept ============================*/
 .section-padding {
@@ -541,7 +544,7 @@
 }
 .medit__cart-text h3 {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 100%;
   margin-bottom: 12px;
   text-transform: uppercase;
@@ -1157,9 +1160,6 @@ audio {
   }
 }
 @media (max-width: 479.98px) {
-  .title__h2 {
-    text-transform: none;
-  }
   .section-padding {
     padding: 25px 0;
   }
@@ -1215,7 +1215,7 @@ audio {
     grid-template-columns: repeat(1, 1fr);
   }
   .gallery .gall-a h3 {
-    text-transform: none;
+    font-size: 20px;
   }
   .recept__body {
     display: grid;

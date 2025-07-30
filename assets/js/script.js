@@ -187,7 +187,7 @@ observer.observe(headerRight, {
 // --------- header------------------------------------------------
 window.addEventListener('scroll', function () {
   const header = document.getElementById('header');
-  if (window.scrollY > 80) {
+  if (window.scrollY > 180) {
     header.style.top = '0px';
     header.style.backgroundColor = '#FFF9FA';
   } else {
