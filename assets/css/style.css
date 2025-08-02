@@ -670,15 +670,18 @@ audio {
 }
 .footer .space__body {
   display: grid;
-  grid-template-columns: 40% 1fr;
+  grid-template-columns: 35% 1fr;
   align-items: center;
-  gap: 60px;
+  gap: 30px;
   padding: 30px 0 100px;
   position: relative;
 }
 .footer .space__body .space__img {
   position: relative;
   z-index: 2;
+}
+.footer .space__body .space__img img {
+  max-width: 482px;
 }
 .footer .space__body .space__text {
   position: relative;
@@ -691,7 +694,7 @@ audio {
   text-transform: uppercase;
   line-height: 100%;
   margin-bottom: 12px;
-  transform: translateX(-70px);
+  margin-bottom: 50px;
 }
 .footer .space__body .space__text .text-bg__wrap {
   border-radius: 30px;
@@ -1279,6 +1282,12 @@ audio {
   .hero__body .body__image {
     right: -70px;
     top: 145px;
+  }
+  .footer .space__body .space__img {
+    margin-left: -9.5em;
+  }
+  .footer .space__body .space__img img {
+    width: 260px;
   }
 }
 @media (max-width: 393.98px) {
