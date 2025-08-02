@@ -1380,6 +1380,18 @@ audio {
 		
 	}
 }
+@media (max-width:412.98px) { 
+	.hero__body .body__text .hero__text {
+        max-width: 240px;
+    }	
+	.hero__body .body__image {
+        right: -70px;
+		top: 145px;
+	}
+
+}
+
+
 @media (max-width:393.98px) {
 	.swiper2 {
 		height: 360px;
