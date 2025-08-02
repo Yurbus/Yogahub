@@ -533,6 +533,7 @@
 		font-size: 20px;
 		line-height: 100%;
 		margin-bottom: 12px;
+		text-transform: uppercase;
 	}
 	p {
 		font-weight: 500;
@@ -1380,6 +1381,7 @@ audio {
 		
 	}
 }
+
 @media (max-width:412.98px) { 
 	.hero__body .body__text .hero__text {
         max-width: 240px;
@@ -1390,7 +1392,6 @@ audio {
 	}
 
 }
-
 
 @media (max-width:393.98px) {
 	.swiper2 {
