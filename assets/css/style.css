@@ -245,7 +245,7 @@
 .hero__body .body__image {
   position: absolute;
   right: 6rem;
-  top: 0;
+  top: -35px;
   z-index: 3;
 }
 /*================ recept ============================*/
