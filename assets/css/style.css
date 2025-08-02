@@ -1191,6 +1191,10 @@ audio {
     max-width: 320px;
   }
   .hero__body .body__text .hero__text {
+    border-radius: 12px;
+    padding: 10px;
+  }
+  .hero__body .body__text .hero__text {
     max-width: 220px;
     font-size: 12px;
   }
