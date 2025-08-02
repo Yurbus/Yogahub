@@ -244,7 +244,7 @@
 }
 .hero__body .body__image {
   position: absolute;
-  right: 6rem;
+  right: 3rem;
   top: -20px;
   z-index: 3;
 }
@@ -445,7 +445,7 @@
 /*============== meditation ==============================*/
 .meditation {
   position: relative;
-  background: url("../img/medit-bg.svg") top no-repeat;
+  background: url("../img/med-bg.svg") top no-repeat;
   background-size: cover;
   width: 100%;
 }
@@ -1277,11 +1277,11 @@ audio {
 }
 @media (max-width: 412.98px) {
   .hero__body .body__text .hero__text {
-    max-width: 240px;
+    max-width: 230px;
   }
   .hero__body .body__image {
-    right: -70px;
     top: 145px;
+    left: -35px;
   }
   .footer .space__body .space__img {
     margin-left: -9.5em;
@@ -1302,6 +1302,9 @@ audio {
   }
 }
 @media (max-width: 388.98px) {
+  .hero__body .body__text .hero__text {
+    max-width: 220px;
+  }
   .recept__title-block .title__h2 {
     font-size: 23px;
   }

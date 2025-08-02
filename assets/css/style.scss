@@ -185,15 +185,6 @@
 	gap: 10px;
 	position: relative;
 	margin-top: 60px;
-		// &:after {
-		// 	content: '';
-		// 	position: absolute;
-		// 	top: -35px;
-		// 	right: -35%;
-		// 	background: url('../img/main-bg.svg') no-repeat;
-		// 	width: 100%;
-		// 	height: 120%;
-		// }
 	.body__text {
 		z-index: 2;
 		position: relative;
@@ -240,7 +231,7 @@
 	}
 	.body__image {
 		position: absolute;
-		right: 6rem;
+		right: 3rem;
 		top: -20px;
 		z-index: 3;
 		img {
@@ -442,7 +433,7 @@
 /*============== meditation ==============================*/
 .meditation {
 	position: relative;
-	background: url('../img/medit-bg.svg') top no-repeat;
+	background: url('../img/med-bg.svg') top no-repeat;
 	background-size: cover;
 	width: 100%;
 }
@@ -1377,12 +1368,13 @@ audio {
 	.hero__body {
 		.body__text {
 			.hero__text {
-				max-width: 240px;
+				max-width: 230px;
 			}
 		}
 		.body__image {
-			right: -70px;
+			// right: -70px;
 			top: 145px;
+			left: -35px;
 		}
 	}	
 	.footer {
@@ -1414,6 +1406,13 @@ audio {
 	}
 }
 @media (max-width:388.98px) {
+	.hero__body {
+		.body__text {
+			.hero__text {
+				max-width: 220px;
+			}
+		}
+	}
 		.recept__title-block {
 			.title__h2 {
 				font-size: 23px;
