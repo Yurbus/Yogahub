@@ -35,7 +35,7 @@
 	text-transform: uppercase;
 }
 .title__h2 {
-	font-size: clamp(24px, 5vw, 42px);
+	font-size: clamp(20px, 5vw, 42px);
 	font-weight: 700;
 	text-transform: uppercase;
 	color: var(--rose);
@@ -201,12 +201,14 @@
 		z-index: 3;
 		.hero__title  {
 			max-width: 720px;
+			margin-bottom: 10px;
 		}
 		.hero__sub-title {
 			font-size: clamp(18px, 4vw, 42px);
 			font-weight: 700;
 			font-family: var(--font-family-exo2);
 			text-transform: uppercase;
+			margin-bottom: 6px;
 		}
 		.hero__text {
 			display: inline-flex;
@@ -215,7 +217,7 @@
 			font-family: var(--font-family-exo2);
 			line-height: 120%;
 			margin: 15px 0;
-			max-width: 560px;
+			max-width: 612px;
 			background: #FEF1F7;
 			border-radius: 30px;
 			padding: 10px 20px;
@@ -238,8 +240,9 @@
 	}
 	.body__image {
 		position: absolute;
-		right: 0;
+		right: 6rem;
 		top: 0;
+		z-index: 3;
 		img {
 
 		} 
@@ -254,7 +257,7 @@
 	position: relative;
 	background: #FFF9FA;
 	background: linear-gradient(0deg,rgba(255, 249, 250, 1) 0%, rgba(232, 131, 163, 1) 100%);
-	padding-top: 280px;
+	padding-top: 355px;
 	padding-bottom: 100px;
 	margin-top: -14em;
 	&:after {
@@ -527,7 +530,7 @@
 	color: var(--rose);
 	h3 {
 		font-weight: 700;
-		font-size: 22px;
+		font-size: 20px;
 		line-height: 100%;
 		margin-bottom: 12px;
 	}
@@ -670,14 +673,14 @@ audio {
 		// }
 		.space__img {
 			position: relative;
-			z-index: 3;
+			z-index: 2;
 			img {
 				// padding-left: 100px;
 			}
 		}
 		.space__text {
 			position: relative;
-			z-index: 3;
+			z-index: 2;
 			h3 {
 				font-weight: 700;
 				font-size: 42px;
@@ -813,7 +816,7 @@ audio {
 		}
 	}
 	.training__body .item__tr-video iframe {
-		height: 340px;
+		height: 300px;
 	}
 }
 @media (max-width:959.98px) {
@@ -1034,6 +1037,9 @@ audio {
 	}
 }
 @media (max-width:820.98px) {
+	.recept {
+		padding-top: 230px;
+	}
 		.training__body {
 		.training__item {
 			grid-template-columns: 1fr;
@@ -1214,6 +1220,12 @@ audio {
 	.recept {
 		padding-top: 200px;
 	}
+	.meditation {
+		position: relative;
+		background: url('../img/meditation_bg-mob.svg') top no-repeat;
+		background-size: cover;
+		width: 100%;
+	}
 	.medit__cart {
 		grid-template-columns: 1fr;
 	}
@@ -1236,9 +1248,6 @@ audio {
 }
 
 @media (max-width:479.98px) {
-	.title__h2 {
-		text-transform: none;
-	}
 	.section-padding {
 		padding: 25px 0;
 	}
@@ -1287,8 +1296,8 @@ audio {
 			z-index: 3;
 		}
 		.body__text .mini-text {
-        	font-size: 7px;
-    	}
+			font-size: 7px;
+		}
 	}
 	.recept {
         margin-top: -3em;
@@ -1300,12 +1309,9 @@ audio {
 	.gallery {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-	}
-	.gallery .gall-a h3 {
-		text-transform: none;
-	}
-	.medit__cart-text{
-		padding: 15px;
+		.gall-a h3 {
+			font-size: 20px;
+		}
 	}
 	.recept__body {
 		display: grid;
@@ -1382,6 +1388,13 @@ audio {
 			iframe {
 				height: 170px;
 			}
+		}
+	}
+}
+@media (max-width:388.98px) {
+		.recept__title-block {
+			.title__h2 {
+				font-size: 23px;
 		}
 	}
 }
