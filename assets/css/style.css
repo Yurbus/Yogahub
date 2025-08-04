@@ -1283,6 +1283,9 @@ audio {
     top: 145px;
     left: -35px;
   }
+  .recept {
+    margin-top: -1em;
+  }
   .footer .space__body .space__img {
     margin-left: -9.5em;
   }
