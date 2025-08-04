@@ -188,7 +188,7 @@
 	.body__text {
 		z-index: 2;
 		position: relative;
-		margin-top: 30px;
+		margin-top: 60px;
 		z-index: 3;
 		.hero__title  {
 			max-width: 720px;
@@ -519,6 +519,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	color: var(--rose);
+	min-height: 100%;
 	h3 {
 		font-weight: 700;
 		font-size: 20px;
@@ -602,8 +603,9 @@ audio {
 	.item__tr-video {
 		iframe {
 			width: 100%;
-			height: 400px;
+			height: auto;
 			border-radius: 12px;
+			aspect-ratio: 16 / 9;
 		}
 		.time__play {
 			display: flex;
@@ -798,9 +800,9 @@ audio {
 			right: -8em;
 		}
 	}
-	.training__body .item__tr-video iframe {
-		height: 300px;
-	}
+	// .training__body .item__tr-video iframe {
+	// 	height: 300px;
+	// }
 }
 @media (max-width:959.98px) {
 	.menu__icon {
@@ -1002,9 +1004,12 @@ audio {
 	.swiper-button-prev {
 		left: 35%;
 	}
-	.training__body .item__tr-video iframe {
-		height: 270px;
+	.medit__cart-text h3 {
+		font-size: 18px;
 	}
+	// .training__body .item__tr-video iframe {
+	// 	height: 270px;
+	// }
 	.footer {
 		.space__body {
 			position: relative;
@@ -1046,9 +1051,9 @@ audio {
 				max-width: 187px;
 			}
 		}
-		.item__tr-video iframe {
-			height: 375px;
-		}
+		// .item__tr-video iframe {
+		// 	height: 375px;
+		// }
 	}
 }
 @media (max-width:768.98px) {
@@ -1086,17 +1091,6 @@ audio {
 		gap: 10px;
 		margin-top: 34px;
 	}
-	// .gallery {
-	// 	display: grid;
-	// 	grid-template-columns: repeat(2, 1fr);
-	// 	gap: 10px;
-	// 	margin-top: 34px;
-	// 	.gall-a:nth-child(1),
-	// 	.gall-a:nth-child(4) {
-	// 		transform: translateY(0);
-	// 	}
-	// }
-	
 	.swiper2 {
 		height: 480px;
 		.swiper-slide {
@@ -1218,13 +1212,13 @@ audio {
 	.swiper-button-prev {
 		left: 20%;
 	}
-	.training__body {
-		.item__tr-video {
-			iframe {
-				height: 300px;
-			}
-		}
-	}
+	// .training__body {
+	// 	.item__tr-video {
+	// 		iframe {
+	// 			height: 300px;
+	// 		}
+	// 	}
+	// }
 	.footer .footer__body {
 		margin-top: -90px;
 	}
@@ -1272,6 +1266,7 @@ audio {
 	}
 	.hero__body {
 		.body__text {
+			margin-top: 30px;
 			.hero__text {
 				max-width: 220px;
 				font-size: 12px;
@@ -1333,11 +1328,11 @@ audio {
         padding: 25px 10px;
     }
 	.training__body {
-		.item__tr-video {
-			iframe {
-				height: 190px;
-			}
-		}
+		// .item__tr-video {
+		// 	iframe {
+		// 		height: 190px;
+		// 	}
+		// }
 		.item__tr-text {
 			.training_btn {
 				max-width: 140px;
@@ -1400,13 +1395,13 @@ audio {
 			height: 220px;
 		}
 	}
-	.training__body {
-		.item__tr-video {
-			iframe {
-				height: 170px;
-			}
-		}
-	}
+	// .training__body {
+	// 	.item__tr-video {
+	// 		iframe {
+	// 			height: 170px;
+	// 		}
+	// 	}
+	// }
 }
 @media (max-width:388.98px) {
 	.hero__body {
@@ -1416,9 +1411,12 @@ audio {
 			}
 		}
 	}
-		.recept__title-block {
-			.title__h2 {
-				font-size: 23px;
+	.recept__title-block {
+		.title__h2 {
+			font-size: 23px;
 		}
 	}
+	.medit__cart-text h3 {
+        font-size: 16px;
+    }
 }
