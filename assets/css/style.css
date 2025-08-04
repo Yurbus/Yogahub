@@ -201,7 +201,7 @@
 .hero__body .body__text {
   z-index: 2;
   position: relative;
-  margin-top: 30px;
+  margin-top: 60px;
   z-index: 3;
 }
 .hero__body .body__text .hero__title {
@@ -1197,6 +1197,9 @@ audio {
   .hero__body .body__text .hero__text {
     border-radius: 12px;
     padding: 10px;
+  }
+  .hero__body .body__text {
+    margin-top: 30px;
   }
   .hero__body .body__text .hero__text {
     max-width: 220px;
