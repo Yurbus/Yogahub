@@ -519,6 +519,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	color: var(--rose);
+	min-height: 100%;
 	h3 {
 		font-weight: 700;
 		font-size: 20px;
@@ -1086,17 +1087,6 @@ audio {
 		gap: 10px;
 		margin-top: 34px;
 	}
-	// .gallery {
-	// 	display: grid;
-	// 	grid-template-columns: repeat(2, 1fr);
-	// 	gap: 10px;
-	// 	margin-top: 34px;
-	// 	.gall-a:nth-child(1),
-	// 	.gall-a:nth-child(4) {
-	// 		transform: translateY(0);
-	// 	}
-	// }
-	
 	.swiper2 {
 		height: 480px;
 		.swiper-slide {
@@ -1105,6 +1095,9 @@ audio {
 				height: 340px;
 			}
 		}
+	}
+	.medit__cart-text h3 {
+		font-size: 18px;
 	}
 	.training {
 		position: relative;
