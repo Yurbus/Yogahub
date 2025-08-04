@@ -1006,6 +1006,9 @@ audio {
   .swiper-button-prev {
     left: 35%;
   }
+  .medit__cart-text h3 {
+    font-size: 18px;
+  }
   .training__body .item__tr-video iframe {
     height: 270px;
   }
@@ -1084,9 +1087,6 @@ audio {
   .swiper2 .swiper-slide iframe {
     width: 100%;
     height: 340px;
-  }
-  .medit__cart-text h3 {
-    font-size: 18px;
   }
   .training {
     position: relative;
