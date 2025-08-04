@@ -274,7 +274,7 @@
 .recept:before {
   content: "";
   position: absolute;
-  bottom: -56em;
+  bottom: -58em;
   left: 0;
   right: 0;
   background: url("../img/bottom-grad.svg") no-repeat;
@@ -292,7 +292,7 @@
 }
 .section__title-block .block__sub-text {
   margin: 3px auto 0;
-  max-width: 680px;
+  max-width: 690px;
   font-weight: 400;
   font-size: clamp(12px, 3vw, 18px);
   line-height: 1.1;
