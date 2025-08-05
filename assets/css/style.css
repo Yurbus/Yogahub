@@ -656,7 +656,7 @@ audio {
   margin-bottom: 10px;
 }
 .training__body .item__tr-text .item__tr-descr {
-  font-size: clamp(12px, 3vw, 20px);
+  font-size: clamp(12px, 2vw, 18px);
   font-weight: 400;
   line-height: 130%;
   color: var(--rose);
