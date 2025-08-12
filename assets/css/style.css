@@ -1328,6 +1328,16 @@ audio {
     margin-top: 50px;
   }
 }
+@media (max-width: 430.98px) {
+  .footer .space__body .space__text {
+    transform: translateX(14px);
+  }
+}
+@media (max-width: 415.98px) {
+  .footer .space__body .space__img {
+    transform: translate(-84px, 140px);
+  }
+}
 @media (max-width: 412.98px) {
   .hero__body .body__text .hero__text {
     max-width: 230px;
@@ -1341,7 +1351,7 @@ audio {
     padding-top: 110px;
   }
   .footer .space__body .space__text .text-bg__wrap {
-    transform: translateX(15px);
+    transform: translateX(5px);
   }
   .footer .space__body .space__img img {
     width: 250px;
