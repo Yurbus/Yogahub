@@ -1324,6 +1324,9 @@ audio {
     margin-top: -3em;
     padding-top: 110px;
   }
+  .footer .space__body .space__text .text-bg__wrap {
+    transform: translateX(15px);
+  }
   .footer .space__body .space__img img {
     width: 250px;
   }

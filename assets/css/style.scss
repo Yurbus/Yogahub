@@ -1380,6 +1380,11 @@ audio {
     }
 	.footer {
 		.space__body {
+			.space__text {
+				.text-bg__wrap {
+					transform: translateX(15px);
+				}
+			}
 			.space__img {
 				img {
 					width: 250px;
@@ -1387,7 +1392,6 @@ audio {
 			}
 		}
 	}
-
 }
 
 @media (max-width:393.98px) {
