@@ -1324,6 +1324,9 @@ audio {
     margin-left: -50%;
     margin-bottom: 30px;
   }
+  .footer .footer__body {
+    margin-top: 50px;
+  }
 }
 @media (max-width: 412.98px) {
   .hero__body .body__text .hero__text {
