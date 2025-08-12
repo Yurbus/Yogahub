@@ -669,6 +669,17 @@ audio {
 /*================ footer ============================*/
 .footer {
   padding-top: 40px;
+  position: relative;
+}
+.footer:after {
+  content: "";
+  position: absolute;
+  background: url("../img/footer__bg.svg") top no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top: 35rem;
+  left: 0;
 }
 .footer .space__body {
   display: grid;
@@ -681,9 +692,10 @@ audio {
 .footer .space__body .space__img {
   position: relative;
   z-index: 2;
+  transform: translateX(100px);
 }
 .footer .space__body .space__img img {
-  max-width: 482px;
+  max-width: 530px;
 }
 .footer .space__body .space__text {
   position: relative;
@@ -692,7 +704,7 @@ audio {
 .footer .space__body .space__text h3 {
   font-weight: 700;
   font-size: 42px;
-  font-size: clamp(34px, 5vw, 90px);
+  font-size: clamp(34px, 5vw, 77px);
   text-transform: uppercase;
   line-height: 100%;
   margin-bottom: 12px;
@@ -702,30 +714,35 @@ audio {
   border-radius: 30px;
   padding: 15px;
   background: #fef1f7;
-  max-width: 655px;
 }
 .footer .space__body .space__text .text-bg__wrap h4 {
   font-weight: 700;
   font-family: var(--font-family-exo2);
-  font-size: clamp(23px, 4vw, 42px);
+  font-size: clamp(18px, 4vw, 24px);
   line-height: 1.1;
-  text-transform: uppercase;
   margin-bottom: 10px;
 }
 .footer .space__body .space__text .text-bg__wrap p {
   font-weight: 400;
-  font-size: 20px;
+  font-size: clamp(12px, 4vw, 18px);
   line-height: 120%;
   margin-bottom: 12px;
 }
 .footer .space__body .space__text .space__btn {
-  max-width: 328px;
+  max-width: 350px;
+  margin-top: 10px;
+}
+.footer .space__body .space__text .bottom__text {
+  font-size: clamp(10px, 4vw, 16px);
+  color: var(--rose);
   margin-top: 10px;
 }
 .footer .footer__body {
   background: #f8e1e7;
   border-radius: 30px 30px 0 0;
   padding: 60px 0;
+  position: relative;
+  z-index: 2;
 }
 .footer .footer__body .footer-body_container {
   display: flex;
