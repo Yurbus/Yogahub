@@ -679,7 +679,7 @@ audio {
   background-size: cover;
   width: 100%;
   height: 100%;
-  top: 35rem;
+  top: 30rem;
   left: 0;
 }
 .footer .space__body {
@@ -693,7 +693,7 @@ audio {
 .footer .space__body .space__img {
   position: relative;
   z-index: 2;
-  transform: translateX(100px);
+  transform: translateX(35px);
 }
 .footer .space__body .space__img img {
   max-width: 530px;
@@ -1037,7 +1037,11 @@ audio {
     display: none;
   }
   .footer .space__body .space__img img {
+    width: 280px;
     padding-left: 0;
+    position: absolute;
+    top: -16rem;
+    left: 0;
   }
 }
 @media (max-width: 820.98px) {
@@ -1067,6 +1071,11 @@ audio {
   }
   .training__body .item__tr-text .training_btn {
     max-width: 187px;
+  }
+  .footer .space__body .space__img {
+    position: relative;
+    z-index: 3;
+    transform: translate(26px, 96px);
   }
 }
 @media (max-width: 768.98px) {
@@ -1149,8 +1158,6 @@ audio {
     max-width: 180px;
   }
   .footer .space__body .space__img {
-    margin-top: -14em;
-    margin-left: -18em;
     position: relative;
     z-index: 3;
   }
