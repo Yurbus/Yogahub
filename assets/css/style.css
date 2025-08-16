@@ -456,69 +456,12 @@
 }
 
 .meditation__body {
-  padding-bottom: 80px;
-}
-
-.swiper {
-  width: 100%;
-  height: 680px;
-  position: relative;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  top: 96% !important;
-  width: 44px;
-  height: 44px;
-  z-index: 20;
-}
-
-.swiper-button-next:after {
-  background: url("../img/right_arrow.svg") no-repeat !important;
-  font-size: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-button-prev:after {
-  background: url("../img/left_arrow.svg") no-repeat !important;
-  font-size: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-button-next {
-  right: 40%;
-}
-
-.swiper-button-prev {
-  left: 40%;
-}
-
-.swiper .swiper-horizontal > .swiper-pagination-bullets,
-.swiper .swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper .swiper-pagination-custom,
-.swiper .swiper-pagination-fraction {
-  bottom: 17px;
-}
-
-.swiper-pagination-bullet {
-  background: var(--main-color-opacity) !important;
-  opacity: 1 !important;
-}
-
-.swiper-pagination-bullet-active {
-  background: var(--main-color) !important;
-  width: 64px;
-  height: 8px;
-  border-radius: 8px;
+  padding: 40px 0 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .medit__cart {
@@ -1051,6 +994,11 @@ audio {
     top: 26rem;
   }
 }
+@media (max-width: 992.98px) {
+  .meditation__body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (max-width: 912px) {
   .hero__body .body__text .hero__text {
     max-width: 100%;
@@ -1195,8 +1143,13 @@ audio {
     background-size: cover;
     width: 100%;
   }
+  .meditation__body {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .medit__cart {
     grid-template-columns: 1fr;
+    max-width: 340px;
+    margin: 0 auto;
   }
   .swiper-button-next {
     right: 20%;
@@ -1281,7 +1234,7 @@ audio {
     grid-template-columns: repeat(1, 1fr);
   }
   .meditation__body {
-    padding: 0 20px;
+    padding: 20px;
   }
   .swiper {
     height: 631px;
